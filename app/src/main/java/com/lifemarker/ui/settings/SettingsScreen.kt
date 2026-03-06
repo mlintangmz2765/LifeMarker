@@ -38,7 +38,7 @@ fun SettingsScreen(
     val context = LocalContext.current
 
     val localeList = AppCompatDelegate.getApplicationLocales()
-    val currentLocale = if (!localeList.isEmpty) localeList[0]?.toLanguageTag() ?: "in" else "in"
+    val currentLocale = if (!localeList.isEmpty) localeList[0]?.toLanguageTag() ?: "id" else "id"
 
     var isBackupAction by remember { mutableStateOf(true) }
 
@@ -87,9 +87,9 @@ fun SettingsScreen(
             
             LanguageOption(
                 title = "Bahasa Indonesia",
-                isSelected = currentLocale.startsWith("in") || currentLocale.startsWith("id"),
+                isSelected = currentLocale.startsWith("id") || currentLocale.startsWith("in"),
                 onClick = {
-                    AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("in"))
+                    AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("id"))
                 }
             )
             

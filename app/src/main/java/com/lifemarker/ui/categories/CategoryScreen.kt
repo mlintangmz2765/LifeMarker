@@ -142,10 +142,8 @@ fun CategoryItem(
                 modifier = Modifier.weight(1f)
             )
             
-            if (!category.isSystemGenerated) {
-                IconButton(onClick = onDelete) {
-                    Icon(Icons.Default.Delete, contentDescription = "Delete", tint = MaterialTheme.colorScheme.error)
-                }
+            IconButton(onClick = onDelete) {
+                Icon(Icons.Default.Delete, contentDescription = "Delete", tint = MaterialTheme.colorScheme.error)
             }
         }
     }
@@ -175,7 +173,7 @@ fun AddCategoryContent(
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp),
             singleLine = true,
-            enabled = !uiState.isEditingSystemCategory
+            enabled = true
         )
         Spacer(modifier = Modifier.height(16.dp))
 

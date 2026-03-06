@@ -131,7 +131,14 @@ fun MainScreen(
                     zoomControlsEnabled = false,
                     myLocationButtonEnabled = false
                 ),
-                properties = MapProperties(isMyLocationEnabled = hasLocationPermission)
+                properties = MapProperties(isMyLocationEnabled = hasLocationPermission),
+                onMapLongClick = { latLng ->
+                    val location = Location("").apply {
+                        latitude = latLng.latitude
+                        longitude = latLng.longitude
+                    }
+                    viewModel.startAddingMarker(location)
+                }
             ) {
                 Clustering(
                     items = uiState.filteredMarkers.map { MarkerClusterItem(it) },

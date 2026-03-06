@@ -94,7 +94,7 @@ class CategoryViewModel @Inject constructor(
                 id = state.editingCategoryId ?: 0,
                 isSystemGenerated = state.isEditingSystemCategory,
                 systemNameKey = state.editingSystemNameKey,
-                customName = if (state.isEditingSystemCategory) null else state.newCategoryName,
+                customName = state.newCategoryName,
                 colorHex = state.newCategoryColor,
                 iconName = state.newCategoryIcon
             )
