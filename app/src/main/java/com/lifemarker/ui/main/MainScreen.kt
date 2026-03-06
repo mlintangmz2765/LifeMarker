@@ -140,6 +140,13 @@ fun MainScreen(
                     viewModel.startAddingMarker(location)
                 }
             ) {
+                if (uiState.isAddingMarker && uiState.selectedLocation != null) {
+                    Marker(
+                        state = MarkerState(position = LatLng(uiState.selectedLocation!!.latitude, uiState.selectedLocation!!.longitude)),
+                        title = stringResource(R.string.add_marker),
+                        icon = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
+                    )
+                }
                 Clustering(
                     items = uiState.filteredMarkers.map { MarkerClusterItem(it) },
                     onClusterItemClick = { clusterItem: MarkerClusterItem ->
