@@ -149,28 +149,30 @@ fun MainScreen(
                     )
                 }
                 uiState.filteredMarkers.forEach { marker ->
-                    val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
-                    val iconName = marker.category?.iconName ?: "Place"
-                    
-                    MarkerComposable(
-                        state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
-                        onClick = {
-                            viewModel.startEditingMarker(marker)
-                            true
-                        }
-                    ) {
-                        Box(
-                            modifier = Modifier
-                                .size(40.dp)
-                                .clip(CircleShape)
-                                .background(Color(categoryColor)),
-                            contentAlignment = Alignment.Center
+                    key(marker.id) {
+                        val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
+                        val iconName = marker.category?.iconName ?: "Place"
+                        
+                        MarkerComposable(
+                            state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
+                            onClick = {
+                                viewModel.startEditingMarker(marker)
+                                true
+                            }
                         ) {
-                            CategoryIcon(
-                                iconName = iconName,
-                                tint = Color.White,
-                                modifier = Modifier.size(24.dp)
-                            )
+                            Box(
+                                modifier = Modifier
+                                    .size(40.dp)
+                                    .clip(CircleShape)
+                                    .background(Color(categoryColor)),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                CategoryIcon(
+                                    iconName = iconName,
+                                    tint = Color.White,
+                                    modifier = Modifier.size(24.dp)
+                                )
+                            }
                         }
                     }
                 }
