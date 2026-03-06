@@ -148,17 +148,17 @@ fun MainScreen(
                         icon = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
                     )
                 }
-                Clustering(
-                    items = uiState.filteredMarkers.map { MarkerClusterItem(it) },
-                    onClusterItemClick = { clusterItem: MarkerClusterItem ->
-                        viewModel.startEditingMarker(clusterItem.markerDetails)
-                        true
-                    },
-                    clusterItemContent = { clusterItem: MarkerClusterItem ->
-                        val marker = clusterItem.markerDetails
-                        val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
-                        val iconName = marker.category?.iconName ?: "Place"
-                        
+                uiState.filteredMarkers.forEach { marker ->
+                    val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
+                    val iconName = marker.category?.iconName ?: "Place"
+                    
+                    MarkerComposable(
+                        state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
+                        onClick = {
+                            viewModel.startEditingMarker(marker)
+                            true
+                        }
+                    ) {
                         Box(
                             modifier = Modifier
                                 .size(40.dp)
@@ -173,7 +173,7 @@ fun MainScreen(
                             )
                         }
                     }
-                )
+                }
             }
             Box(
                 modifier = Modifier
