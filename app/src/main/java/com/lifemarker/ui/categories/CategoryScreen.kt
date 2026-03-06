@@ -26,6 +26,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.lifemarker.R
 import com.lifemarker.domain.model.Category
+import com.lifemarker.util.IconMapper
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -69,7 +72,12 @@ fun CategoryScreen(
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             items(uiState.categories) { category ->
-                CategoryItem(category, context)
+                CategoryItem(
+                    category = category,
+                    context = context,
+                    onEdit = { viewModel.startEditingCategory(category) },
+                    onDelete = { viewModel.deleteCategory(category) }
+                )
             }
         }
 
@@ -79,6 +87,7 @@ fun CategoryScreen(
                     uiState = uiState,
                     onNameChange = viewModel::updateNewCategoryName,
                     onColorChange = viewModel::updateNewCategoryColor,
+                    onIconChange = viewModel::updateNewCategoryIcon,
                     onSave = viewModel::saveCategory,
                     onCancel = viewModel::cancelAddingCategory
                 )
@@ -88,11 +97,16 @@ fun CategoryScreen(
 }
 
 @Composable
-fun CategoryItem(category: Category, context: Context) {
+fun CategoryItem(
+    category: Category, 
+    context: Context,
+    onEdit: () -> Unit,
+    onDelete: () -> Unit
+) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clickable { /* Future: Edit context */ },
+            .clickable(onClick = onEdit),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
         shape = RoundedCornerShape(16.dp)
@@ -110,11 +124,10 @@ fun CategoryItem(category: Category, context: Context) {
                     .background(Color(category.colorHex)),
                 contentAlignment = Alignment.Center
             ) {
-                // Future: Use actual iconName mapped to Material Icons
-                Text(
-                    text = category.customName?.take(1)?.uppercase() ?: category.systemNameKey?.take(1)?.uppercase() ?: "C",
-                    color = Color.White,
-                    style = MaterialTheme.typography.titleMedium
+                Icon(
+                    imageVector = IconMapper.getIconByName(category.iconName),
+                    contentDescription = null,
+                    tint = Color.White
                 )
             }
             Spacer(modifier = Modifier.width(16.dp))
@@ -124,8 +137,15 @@ fun CategoryItem(category: Category, context: Context) {
             Text(
                 text = catName, 
                 style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.weight(1f)
             )
+            
+            if (!category.isSystemGenerated) {
+                IconButton(onClick = onDelete) {
+                    Icon(Icons.Default.Delete, contentDescription = "Delete", tint = MaterialTheme.colorScheme.error)
+                }
+            }
         }
     }
 }
@@ -135,6 +155,7 @@ fun AddCategoryContent(
     uiState: CategoryUiState,
     onNameChange: (String) -> Unit,
     onColorChange: (Int) -> Unit,
+    onIconChange: (String) -> Unit,
     onSave: () -> Unit,
     onCancel: () -> Unit
 ) {
@@ -188,6 +209,30 @@ fun AddCategoryContent(
                                 .background(Color.White.copy(alpha = 0.5f))
                         )
                     }
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(16.dp))
+        Text("Select Icon", style = MaterialTheme.typography.titleMedium)
+        Spacer(modifier = Modifier.height(8.dp))
+        
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            items(IconMapper.predefinedIcons) { (name, vector) ->
+                val isSelected = uiState.newCategoryIcon == name
+                Box(
+                    modifier = Modifier
+                        .size(48.dp)
+                        .clip(CircleShape)
+                        .background(if (isSelected) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant)
+                        .clickable { onIconChange(name) },
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = vector,
+                        contentDescription = name,
+                        tint = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant
+                    )
                 }
             }
         }

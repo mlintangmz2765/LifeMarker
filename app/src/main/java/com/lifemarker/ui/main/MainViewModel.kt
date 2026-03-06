@@ -23,7 +23,8 @@ data class MainUiState(
     val isAddingMarker: Boolean = false,
     val selectedLocation: Location? = null,
     val newMarkerNote: String = "",
-    val newMarkerCategoryId: Long? = null
+    val newMarkerCategoryId: Long? = null,
+    val editingMarkerId: Long? = null
 )
 
 @HiltViewModel
@@ -52,11 +53,36 @@ class MainViewModel @Inject constructor(
     }
 
     fun startAddingMarker(location: Location?) {
-        _uiState.update { it.copy(isAddingMarker = true, selectedLocation = location) }
+        _uiState.update { it.copy(
+            isAddingMarker = true, 
+            editingMarkerId = null,
+            selectedLocation = location,
+            newMarkerNote = "",
+            newMarkerCategoryId = it.categories.firstOrNull()?.id
+        ) }
+    }
+
+    fun startEditingMarker(marker: MarkerDetails) {
+        val location = Location("").apply {
+            latitude = marker.latitude
+            longitude = marker.longitude
+        }
+        _uiState.update { it.copy(
+            isAddingMarker = true,
+            editingMarkerId = marker.id,
+            selectedLocation = location,
+            newMarkerNote = marker.note ?: "",
+            newMarkerCategoryId = marker.categoryId
+        ) }
     }
 
     fun cancelAddingMarker() {
-        _uiState.update { it.copy(isAddingMarker = false, newMarkerNote = "", selectedLocation = null) }
+        _uiState.update { it.copy(
+            isAddingMarker = false, 
+            editingMarkerId = null,
+            newMarkerNote = "", 
+            selectedLocation = null
+        ) }
     }
 
     fun updateNewMarkerNote(note: String) {
@@ -67,6 +93,17 @@ class MainViewModel @Inject constructor(
         _uiState.update { it.copy(newMarkerCategoryId = categoryId) }
     }
 
+    fun deleteMarker() {
+        val editingId = _uiState.value.editingMarkerId ?: return
+        viewModelScope.launch {
+            val marker = _uiState.value.markers.find { it.id == editingId }
+            if (marker != null) {
+                markerRepository.deleteMarker(marker)
+            }
+            cancelAddingMarker()
+        }
+    }
+
     fun saveMarker() {
         val state = _uiState.value
         val lat = state.selectedLocation?.latitude ?: return
@@ -74,16 +111,21 @@ class MainViewModel @Inject constructor(
         val catId = state.newMarkerCategoryId ?: return
 
         viewModelScope.launch {
-            markerRepository.insertMarker(
-                MarkerDetails(
-                    id = 0,
-                    categoryId = catId,
-                    latitude = lat,
-                    longitude = lng,
-                    timestamp = System.currentTimeMillis(),
-                    note = state.newMarkerNote.takeIf { it.isNotBlank() }
-                )
+            val markerDetails = MarkerDetails(
+                id = state.editingMarkerId ?: 0,
+                categoryId = catId,
+                latitude = lat,
+                longitude = lng,
+                timestamp = System.currentTimeMillis(),
+                note = state.newMarkerNote.takeIf { it.isNotBlank() },
+                category = null
             )
+            
+            if (state.editingMarkerId != null) {
+                markerRepository.updateMarker(markerDetails)
+            } else {
+                markerRepository.insertMarker(markerDetails)
+            }
             cancelAddingMarker()
         }
     }

@@ -15,9 +15,10 @@ import javax.inject.Inject
 data class CategoryUiState(
     val categories: List<Category> = emptyList(),
     val isAddingCategory: Boolean = false,
+    val editingCategoryId: Long? = null,
     val newCategoryName: String = "",
     val newCategoryColor: Int = 0xFFFF9800.toInt(),
-    val newCategoryIcon: String = "Star"
+    val newCategoryIcon: String = "Place"
 )
 
 @HiltViewModel
@@ -37,11 +38,27 @@ class CategoryViewModel @Inject constructor(
     }
 
     fun startAddingCategory() {
-        _uiState.update { it.copy(isAddingCategory = true, newCategoryName = "") }
+        _uiState.update { it.copy(
+            isAddingCategory = true, 
+            editingCategoryId = null,
+            newCategoryName = "",
+            newCategoryColor = 0xFFFF9800.toInt(),
+            newCategoryIcon = "Place"
+        ) }
+    }
+
+    fun startEditingCategory(category: Category) {
+        _uiState.update { it.copy(
+            isAddingCategory = true,
+            editingCategoryId = category.id,
+            newCategoryName = category.customName ?: category.systemNameKey ?: "",
+            newCategoryColor = category.colorHex,
+            newCategoryIcon = category.iconName
+        ) }
     }
 
     fun cancelAddingCategory() {
-        _uiState.update { it.copy(isAddingCategory = false) }
+        _uiState.update { it.copy(isAddingCategory = false, editingCategoryId = null) }
     }
 
     fun updateNewCategoryName(name: String) {
@@ -52,21 +69,35 @@ class CategoryViewModel @Inject constructor(
         _uiState.update { it.copy(newCategoryColor = color) }
     }
 
+    fun updateNewCategoryIcon(iconName: String) {
+        _uiState.update { it.copy(newCategoryIcon = iconName) }
+    }
+
+    fun deleteCategory(category: Category) {
+        viewModelScope.launch {
+            categoryRepository.deleteCategory(category)
+        }
+    }
+
     fun saveCategory() {
         val state = _uiState.value
         if (state.newCategoryName.isBlank()) return
 
         viewModelScope.launch {
-            categoryRepository.insertCategory(
-                Category(
-                    id = 0,
-                    isSystemGenerated = false,
-                    systemNameKey = null,
-                    customName = state.newCategoryName,
-                    colorHex = state.newCategoryColor,
-                    iconName = state.newCategoryIcon
-                )
+            val category = Category(
+                id = state.editingCategoryId ?: 0,
+                isSystemGenerated = false,
+                systemNameKey = null, // Custom categories don't have this
+                customName = state.newCategoryName,
+                colorHex = state.newCategoryColor,
+                iconName = state.newCategoryIcon
             )
+            
+            if (state.editingCategoryId != null) {
+                categoryRepository.updateCategory(category)
+            } else {
+                categoryRepository.insertCategory(category)
+            }
             cancelAddingCategory()
         }
     }

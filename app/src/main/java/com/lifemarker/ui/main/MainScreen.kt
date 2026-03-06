@@ -12,7 +12,6 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
-import com.lifemarker.util.createCustomMarkerBitmapDescriptor
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -119,20 +118,34 @@ fun MainScreen(
             ) {
                 uiState.markers.forEach { marker ->
                     val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
-                    val initial = (marker.category?.customName?.take(1) ?: marker.category?.systemNameKey?.take(1) ?: "M").uppercase()
-                    
-                    val mapIcon = remember(categoryColor, initial) {
-                        createCustomMarkerBitmapDescriptor(categoryColor, initial)
-                    }
+                    val iconName = marker.category?.iconName ?: "Place"
 
-                    Marker(
+                    MarkerComposable(
+                        keys = arrayOf(marker.id, categoryColor, iconName),
                         state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
                         title = marker.category?.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
                                 ?: marker.category?.customName 
                                 ?: "Marker",
                         snippet = marker.note,
-                        icon = mapIcon
-                    )
+                        onClick = {
+                            viewModel.startEditingMarker(marker)
+                            true
+                        }
+                    ) {
+                        Box(
+                            modifier = Modifier
+                                .size(48.dp)
+                                .clip(CircleShape)
+                                .background(Color(categoryColor)),
+                            contentAlignment = Alignment.Center
+                        ) {
+                            Icon(
+                                imageVector = com.lifemarker.util.IconMapper.getIconByName(iconName),
+                                contentDescription = null,
+                                tint = Color.White
+                            )
+                        }
+                    }
                 }
             }
             // Top Gradient Overlay
@@ -201,6 +214,7 @@ fun MainScreen(
                         onNavigateToCategories()
                     },
                     onSave = viewModel::saveMarker,
+                    onDelete = { viewModel.deleteMarker() },
                     onCancel = viewModel::cancelAddingMarker
                 )
             }
@@ -218,6 +232,7 @@ fun AddMarkerContent(
     onCategorySelect: (Long) -> Unit,
     onManageCategoriesClick: () -> Unit,
     onSave: () -> Unit,
+    onDelete: () -> Unit,
     onCancel: () -> Unit
 ) {
     val context = LocalContext.current
@@ -289,17 +304,23 @@ fun AddMarkerContent(
         )
 
         Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(24.dp))
         Row(
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.End
         ) {
+            if (uiState.editingMarkerId != null) {
+                IconButton(onClick = onDelete, modifier = Modifier.padding(end = 8.dp)) {
+                    Icon(Icons.Default.Delete, contentDescription = "Delete Marker", tint = MaterialTheme.colorScheme.error)
+                }
+            }
             TextButton(onClick = onCancel) {
                 Text(stringResource(R.string.cancel))
             }
             Spacer(modifier = Modifier.width(8.dp))
             Button(
                 onClick = onSave,
-                enabled = uiState.newMarkerCategoryId != null && uiState.selectedLocation != null
+                enabled = uiState.newMarkerCategoryId != null
             ) {
                 Text(stringResource(R.string.save))
             }
