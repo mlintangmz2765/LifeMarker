@@ -17,13 +17,27 @@ object IconMapper {
         "ShoppingCart" to Icons.Default.ShoppingCart,
         "LocalGasStation" to Icons.Default.LocalGasStation,
         "LocalHospital" to Icons.Default.LocalHospital,
+        "LocalPharmacy" to Icons.Default.LocalPharmacy,
         "DirectionsCar" to Icons.Default.DirectionsCar,
+        "DirectionsBus" to Icons.Default.DirectionsBus,
         "DirectionsBike" to Icons.Default.DirectionsBike,
+        "DirectionsWalk" to Icons.Default.DirectionsWalk,
         "AirplanemodeActive" to Icons.Default.AirplanemodeActive,
         "School" to Icons.Default.School,
+        "AccountBalance" to Icons.Default.AccountBalance,
         "Park" to Icons.Default.Park,
+        "BeachAccess" to Icons.Default.BeachAccess,
         "FitnessCenter" to Icons.Default.FitnessCenter,
-        "Hotel" to Icons.Default.Hotel
+        "Hotel" to Icons.Default.Hotel,
+        "CameraAlt" to Icons.Default.CameraAlt,
+        "Movie" to Icons.Default.Movie,
+        "MusicNote" to Icons.Default.MusicNote,
+        "Pets" to Icons.Default.Pets,
+        "EmojiNature" to Icons.Default.EmojiNature,
+        "ChildCare" to Icons.Default.ChildCare,
+        "Warning" to Icons.Default.Warning,
+        "Recycling" to Icons.Default.Recycling,
+        "TakeoutDining" to Icons.Default.TakeoutDining
     )
 
     fun getIconByName(name: String): ImageVector {

@@ -9,7 +9,7 @@ import com.lifemarker.data.local.entity.MarkerEntity
 
 @Database(
     entities = [CategoryEntity::class, MarkerEntity::class],
-    version = 1,
+    version = 2,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {

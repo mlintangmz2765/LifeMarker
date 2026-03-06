@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lifemarker.app-mergeDebugResources-64:/values-en/values-en.xml",
+            "map": [
+                {
+                    "source": "/mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/res/values-en/strings.xml",
+                    "from": {
+                        "startLines": "10,3,2,7,11,14,5,6,8,4,15,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "420,103,55,335,474,581,213,277,377,153,631,535",
+                        "endColumns": "53,49,47,41,55,49,63,57,37,59,69,45",
+                        "endOffsets": "469,148,98,372,525,626,272,330,410,208,696,576"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,109,159,207,249,305,355,419,477,515,575,645",
+                        "endColumns": "53,49,47,41,55,49,63,57,37,59,69,45",
+                        "endOffsets": "104,154,202,244,300,350,414,472,510,570,640,686"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -46,11 +46,7 @@ fun SettingsScreen(
     val googleSignInLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.StartActivityForResult()
     ) { result ->
-        if (result.resultCode == Activity.RESULT_OK) {
-            viewModel.handleSignInResult(context, isBackupAction, result.data)
-        } else {
-            Toast.makeText(context, "Google Sign-In canceled", Toast.LENGTH_SHORT).show()
-        }
+        viewModel.handleSignInResult(context, isBackupAction, result.data)
     }
 
     LaunchedEffect(uiState.syncStatusMessage) {

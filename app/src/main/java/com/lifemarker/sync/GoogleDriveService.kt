@@ -2,11 +2,12 @@ package com.lifemarker.sync
 
 import android.content.Context
 import android.content.Intent
-import androidx.activity.result.ActivityResultLauncher
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
+import com.google.android.gms.common.api.ApiException
+import com.google.android.gms.common.api.CommonStatusCodes
 import com.google.android.gms.common.api.Scope
 import com.google.api.client.extensions.android.http.AndroidHttp
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential
@@ -34,11 +35,21 @@ class GoogleDriveService @Inject constructor(
 
     fun getSignInIntent(): Intent = signInClient.signInIntent
 
-    fun getSignedInAccountFromIntent(intent: Intent?): GoogleSignInAccount? {
+    fun getSignedInAccountFromIntent(intent: Intent?): Result<GoogleSignInAccount> {
         return try {
-            com.google.android.gms.auth.api.signin.GoogleSignIn.getSignedInAccountFromIntent(intent).getResult(com.google.android.gms.common.api.ApiException::class.java)
+            val task = com.google.android.gms.auth.api.signin.GoogleSignIn.getSignedInAccountFromIntent(intent)
+            val account = task.getResult(ApiException::class.java)
+            Result.success(account)
+        } catch (e: ApiException) {
+            val message = when (e.statusCode) {
+                10 -> "Developer Error (10): Check SHA-1 or Web Client ID in Google Console"
+                7 -> "Network Error: Check internet connection"
+                12500 -> "Sign-In Failed (12500): Check if app is registered in Google Console"
+                else -> "Sign-In Error (${e.statusCode})"
+            }
+            Result.failure(Exception(message))
         } catch (e: Exception) {
-            null
+            Result.failure(Exception("Sign-In failed: ${e.message}"))
         }
     }
 

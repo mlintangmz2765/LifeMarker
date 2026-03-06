@@ -24,7 +24,9 @@ data class MainUiState(
     val selectedLocation: Location? = null,
     val newMarkerNote: String = "",
     val newMarkerCategoryId: Long? = null,
-    val editingMarkerId: Long? = null
+    val newMarkerPhotoUri: String? = null,
+    val editingMarkerId: Long? = null,
+    val editingMarkerTimestamp: Long? = null
 )
 
 @HiltViewModel
@@ -56,8 +58,10 @@ class MainViewModel @Inject constructor(
         _uiState.update { it.copy(
             isAddingMarker = true, 
             editingMarkerId = null,
+            editingMarkerTimestamp = null,
             selectedLocation = location,
             newMarkerNote = "",
+            newMarkerPhotoUri = null,
             newMarkerCategoryId = it.categories.firstOrNull()?.id
         ) }
     }
@@ -70,8 +74,10 @@ class MainViewModel @Inject constructor(
         _uiState.update { it.copy(
             isAddingMarker = true,
             editingMarkerId = marker.id,
+            editingMarkerTimestamp = marker.timestamp,
             selectedLocation = location,
             newMarkerNote = marker.note ?: "",
+            newMarkerPhotoUri = marker.photoUri,
             newMarkerCategoryId = marker.categoryId
         ) }
     }
@@ -80,13 +86,19 @@ class MainViewModel @Inject constructor(
         _uiState.update { it.copy(
             isAddingMarker = false, 
             editingMarkerId = null,
+            editingMarkerTimestamp = null,
             newMarkerNote = "", 
+            newMarkerPhotoUri = null,
             selectedLocation = null
         ) }
     }
 
     fun updateNewMarkerNote(note: String) {
         _uiState.update { it.copy(newMarkerNote = note) }
+    }
+
+    fun updateNewMarkerPhotoUri(uri: String?) {
+        _uiState.update { it.copy(newMarkerPhotoUri = uri) }
     }
 
     fun selectCategory(categoryId: Long) {
@@ -118,6 +130,7 @@ class MainViewModel @Inject constructor(
                 longitude = lng,
                 timestamp = System.currentTimeMillis(),
                 note = state.newMarkerNote.takeIf { it.isNotBlank() },
+                photoUri = state.newMarkerPhotoUri,
                 category = null
             )
             

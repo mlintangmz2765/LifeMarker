@@ -36,26 +36,27 @@ class SettingsViewModel @Inject constructor(
         viewModelScope.launch {
             _uiState.update { it.copy(isSyncing = true, syncStatusMessage = "Authenticating...") }
             
-            val account = driveService.getSignedInAccountFromIntent(intent)
-            if (account == null) {
-                _uiState.update { it.copy(isSyncing = false, syncStatusMessage = "Authentication failed") }
-                return@launch
-            }
+            driveService.getSignedInAccountFromIntent(intent).fold(
+                onSuccess = { account ->
+                    _uiState.update { it.copy(syncStatusMessage = if (backup) "Backing up data..." else "Restoring data...") }
+                    
+                    val result = if (backup) {
+                        driveManager.backupDatabase(account)
+                    } else {
+                        driveManager.restoreDatabase(account)
+                    }
 
-            _uiState.update { it.copy(syncStatusMessage = if (backup) "Backing up data..." else "Restoring data...") }
-            
-            val result = if (backup) {
-                driveManager.backupDatabase(account)
-            } else {
-                driveManager.restoreDatabase(account)
-            }
-
-            result.fold(
-                onSuccess = { msg ->
-                    _uiState.update { it.copy(isSyncing = false, syncStatusMessage = msg) }
+                    result.fold(
+                        onSuccess = { msg ->
+                            _uiState.update { it.copy(isSyncing = false, syncStatusMessage = msg) }
+                        },
+                        onFailure = { err ->
+                            _uiState.update { it.copy(isSyncing = false, syncStatusMessage = err.message ?: "Sync failed") }
+                        }
+                    )
                 },
                 onFailure = { err ->
-                    _uiState.update { it.copy(isSyncing = false, syncStatusMessage = err.message ?: "Sync failed") }
+                    _uiState.update { it.copy(isSyncing = false, syncStatusMessage = err.message ?: "Authentication failed") }
                 }
             )
         }

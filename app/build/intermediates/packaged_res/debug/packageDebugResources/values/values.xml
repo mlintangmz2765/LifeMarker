@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">Add New Category</string>
+    <string name="add_marker">Add Marker</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="cancel">Cancel</string>
+    <string name="cat_eat">Eating</string>
+    <string name="cat_pray">Praying</string>
+    <string name="cat_toilet">Restroom / Toilet</string>
+    <string name="category_name">Category Name</string>
+    <string name="language">App Language</string>
+    <string name="manage_categories">Manage Categories</string>
+    <string name="note_optional">Note (Optional)</string>
+    <string name="save">Save</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_language">Change interface language</string>
+    <string name="settings">Settings</string>
+    <style name="Theme.LifeMarker" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+</resources>

@@ -59,6 +59,7 @@ class MarkerRepositoryImpl @Inject constructor(
         longitude = longitude,
         timestamp = timestamp,
         note = note,
+        photoUri = photoUri,
         category = category
     )
 
@@ -68,7 +69,8 @@ class MarkerRepositoryImpl @Inject constructor(
         latitude = latitude,
         longitude = longitude,
         timestamp = timestamp,
-        note = note
+        note = note,
+        photoUri = photoUri
     )
 
     private fun CategoryEntity.toDomain() = Category(

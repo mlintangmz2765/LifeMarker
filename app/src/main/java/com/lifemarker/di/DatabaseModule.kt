@@ -3,6 +3,7 @@ package com.lifemarker.di
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import com.lifemarker.R
 import com.lifemarker.data.local.AppDatabase
@@ -35,6 +36,7 @@ object DatabaseModule {
             AppDatabase::class.java,
             "lifemarker.db"
         )
+        .addMigrations(MIGRATION_1_2)
         .addCallback(object : RoomDatabase.Callback() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
@@ -46,6 +48,12 @@ object DatabaseModule {
             }
         })
         .build()
+    }
+
+    private val MIGRATION_1_2 = object : Migration(1, 2) {
+        override fun migrate(database: SupportSQLiteDatabase) {
+            database.execSQL("ALTER TABLE markers ADD COLUMN photoUri TEXT")
+        }
     }
 
     private suspend fun seedDefaultCategories(categoryDao: CategoryDao) {

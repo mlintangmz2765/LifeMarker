@@ -24,5 +24,6 @@ data class MarkerEntity(
     val latitude: Double,
     val longitude: Double,
     val timestamp: Long,
-    val note: String? = null
+    val note: String? = null,
+    val photoUri: String? = null
 )
