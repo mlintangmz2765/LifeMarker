@@ -38,7 +38,7 @@ fun SettingsScreen(
     val context = LocalContext.current
 
     val localeList = AppCompatDelegate.getApplicationLocales()
-    val currentLocale = if (!localeList.isEmpty) localeList[0]?.toLanguageTag() ?: "id" else "id"
+    val currentLocale = if (!localeList.isEmpty) localeList[0]?.toLanguageTag() ?: "" else ""
 
     var isBackupAction by remember { mutableStateOf(true) }
 
