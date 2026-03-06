@@ -142,11 +142,32 @@ fun MainScreen(
                 }
             ) {
                 if (uiState.isAddingMarker && uiState.selectedLocation != null) {
-                    Marker(
-                        state = MarkerState(position = LatLng(uiState.selectedLocation!!.latitude, uiState.selectedLocation!!.longitude)),
-                        title = stringResource(R.string.add_marker),
-                        icon = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
-                    )
+                    val selectedCategory = uiState.categories.find { it.id == uiState.newMarkerCategoryId }
+                    if (selectedCategory != null) {
+                        MarkerComposable(
+                            state = MarkerState(position = LatLng(uiState.selectedLocation!!.latitude, uiState.selectedLocation!!.longitude)),
+                        ) {
+                            Box(
+                                modifier = Modifier
+                                    .size(40.dp)
+                                    .clip(CircleShape)
+                                    .background(Color(selectedCategory.colorHex).copy(alpha = 0.7f)),
+                                contentAlignment = Alignment.Center
+                            ) {
+                                CategoryIcon(
+                                    iconName = selectedCategory.iconName,
+                                    tint = Color.White,
+                                    modifier = Modifier.size(24.dp)
+                                )
+                            }
+                        }
+                    } else {
+                        Marker(
+                            state = MarkerState(position = LatLng(uiState.selectedLocation!!.latitude, uiState.selectedLocation!!.longitude)),
+                            title = stringResource(R.string.add_marker),
+                            icon = BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)
+                        )
+                    }
                 }
                 uiState.filteredMarkers.forEach { marker ->
                     key(marker.id) {
