@@ -12,12 +12,14 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
+import com.lifemarker.util.createCustomMarkerBitmapDescriptor
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AddLocation
 import androidx.compose.material.icons.filled.MyLocation
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -41,6 +43,7 @@ import com.lifemarker.R
 @Composable
 fun MainScreen(
     onNavigateToCategories: () -> Unit,
+    onNavigateToSettings: () -> Unit,
     viewModel: MainViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsState()
@@ -115,16 +118,23 @@ fun MainScreen(
                 properties = MapProperties(isMyLocationEnabled = hasLocationPermission)
             ) {
                 uiState.markers.forEach { marker ->
+                    val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
+                    val initial = (marker.category?.customName?.take(1) ?: marker.category?.systemNameKey?.take(1) ?: "M").uppercase()
+                    
+                    val mapIcon = remember(categoryColor, initial) {
+                        createCustomMarkerBitmapDescriptor(categoryColor, initial)
+                    }
+
                     Marker(
                         state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
                         title = marker.category?.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
                                 ?: marker.category?.customName 
                                 ?: "Marker",
-                        snippet = marker.note
+                        snippet = marker.note,
+                        icon = mapIcon
                     )
                 }
             }
-
             // Top Gradient Overlay
             Box(
                 modifier = Modifier
@@ -137,6 +147,17 @@ fun MainScreen(
                         )
                     )
             )
+
+            SmallFloatingActionButton(
+                onClick = onNavigateToSettings,
+                modifier = Modifier
+                    .padding(top = 48.dp, end = 16.dp)
+                    .align(Alignment.TopEnd),
+                containerColor = MaterialTheme.colorScheme.surface,
+                contentColor = MaterialTheme.colorScheme.primary
+            ) {
+                Icon(Icons.Default.Settings, contentDescription = "Settings")
+            }
 
             // UI Elements Overlay
             Column(

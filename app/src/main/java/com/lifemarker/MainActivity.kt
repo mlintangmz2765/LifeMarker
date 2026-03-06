@@ -1,7 +1,7 @@
 package com.lifemarker
 
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -15,8 +15,11 @@ import com.lifemarker.ui.main.MainScreen
 import com.lifemarker.ui.theme.LifeMarkerTheme
 import dagger.hilt.android.AndroidEntryPoint
 
+import androidx.appcompat.app.AppCompatActivity
+import com.lifemarker.ui.settings.SettingsScreen
+
 @AndroidEntryPoint
-class MainActivity : ComponentActivity() {
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -28,14 +31,16 @@ class MainActivity : ComponentActivity() {
                     val navController = rememberNavController()
                     NavHost(navController = navController, startDestination = "main") {
                         composable("main") {
-                            MainScreen(onNavigateToCategories = {
-                                navController.navigate("categories")
-                            })
+                            MainScreen(
+                                onNavigateToCategories = { navController.navigate("categories") },
+                                onNavigateToSettings = { navController.navigate("settings") }
+                            )
                         }
                         composable("categories") {
-                            CategoryScreen(onNavigateBack = {
-                                navController.popBackStack()
-                            })
+                            CategoryScreen(onNavigateBack = { navController.popBackStack() })
+                        }
+                        composable("settings") {
+                            SettingsScreen(onNavigateBack = { navController.popBackStack() })
                         }
                     }
                 }
