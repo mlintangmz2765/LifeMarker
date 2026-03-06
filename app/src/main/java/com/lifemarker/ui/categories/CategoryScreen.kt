@@ -38,19 +38,27 @@ fun CategoryScreen(
 
     Scaffold(
         topBar = {
-            TopAppBar(
+            LargeTopAppBar(
                 title = { Text(stringResource(R.string.manage_categories)) },
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
-                }
+                },
+                colors = TopAppBarDefaults.largeTopAppBarColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    titleContentColor = MaterialTheme.colorScheme.onSurface
+                )
             )
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = { viewModel.startAddingCategory() }) {
-                Icon(Icons.Default.Add, contentDescription = stringResource(R.string.add_category))
-            }
+            ExtendedFloatingActionButton(
+                onClick = { viewModel.startAddingCategory() },
+                icon = { Icon(Icons.Default.Add, contentDescription = stringResource(R.string.add_category)) },
+                text = { Text(stringResource(R.string.add_category)) },
+                containerColor = MaterialTheme.colorScheme.secondaryContainer,
+                contentColor = MaterialTheme.colorScheme.onSecondaryContainer
+            )
         }
     ) { paddingValues ->
         LazyColumn(
@@ -81,25 +89,44 @@ fun CategoryScreen(
 
 @Composable
 fun CategoryItem(category: Category, context: Context) {
-    Row(
+    Card(
         modifier = Modifier
             .fillMaxWidth()
-            .clip(RoundedCornerShape(8.dp))
-            .background(Color.White)
-            .padding(16.dp),
-        verticalAlignment = Alignment.CenterVertically
+            .clickable { /* Future: Edit context */ },
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+        elevation = CardDefaults.cardElevation(defaultElevation = 2.dp),
+        shape = RoundedCornerShape(16.dp)
     ) {
-        Box(
+        Row(
             modifier = Modifier
-                .size(40.dp)
-                .clip(CircleShape)
-                .background(Color(category.colorHex))
-        )
-        Spacer(modifier = Modifier.width(16.dp))
-        val catName = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
-                ?: category.customName 
-                ?: "Unknown"
-        Text(text = catName, style = MaterialTheme.typography.bodyLarge)
+                .fillMaxWidth()
+                .padding(16.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Box(
+                modifier = Modifier
+                    .size(48.dp)
+                    .clip(CircleShape)
+                    .background(Color(category.colorHex)),
+                contentAlignment = Alignment.Center
+            ) {
+                // Future: Use actual iconName mapped to Material Icons
+                Text(
+                    text = category.customName?.take(1)?.uppercase() ?: category.systemNameKey?.take(1)?.uppercase() ?: "C",
+                    color = Color.White,
+                    style = MaterialTheme.typography.titleMedium
+                )
+            }
+            Spacer(modifier = Modifier.width(16.dp))
+            val catName = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
+                    ?: category.customName 
+                    ?: "Unknown"
+            Text(
+                text = catName, 
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
     }
 }
 
@@ -123,7 +150,9 @@ fun AddCategoryContent(
             value = uiState.newCategoryName,
             onValueChange = onNameChange,
             label = { Text(stringResource(R.string.category_name)) },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(12.dp),
+            singleLine = true
         )
         Spacer(modifier = Modifier.height(16.dp))
 

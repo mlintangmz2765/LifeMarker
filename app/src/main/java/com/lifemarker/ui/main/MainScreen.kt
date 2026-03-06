@@ -21,9 +21,11 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -99,27 +101,15 @@ fun MainScreen(
         }
     }
 
-    Scaffold(
-        floatingActionButton = {
-            Column {
-                FloatingActionButton(
-                    onClick = { fetchCurrentLocation() },
-                    modifier = Modifier.padding(bottom = 8.dp)
-                ) {
-                    Icon(Icons.Default.MyLocation, contentDescription = "My Location")
-                }
-                FloatingActionButton(
-                    onClick = { viewModel.startAddingMarker(currentLocation) }
-                ) {
-                    Icon(Icons.Default.AddLocation, contentDescription = "Add Marker")
-                }
-            }
-        }
-    ) { paddingValues ->
+    Scaffold { paddingValues ->
         Box(modifier = Modifier.padding(paddingValues).fillMaxSize()) {
             GoogleMap(
                 modifier = Modifier.fillMaxSize(),
                 cameraPositionState = cameraPositionState,
+                uiSettings = MapUiSettings(
+                    zoomControlsEnabled = false,
+                    myLocationButtonEnabled = false
+                ),
                 properties = MapProperties(isMyLocationEnabled = hasLocationPermission)
             ) {
                 uiState.markers.forEach { marker ->
@@ -132,11 +122,52 @@ fun MainScreen(
                     )
                 }
             }
+
+            // Top Gradient Overlay
+            Box(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(80.dp)
+                    .align(Alignment.TopCenter)
+                    .background(
+                        Brush.verticalGradient(
+                            colors = listOf(Color.Black.copy(alpha = 0.4f), Color.Transparent)
+                        )
+                    )
+            )
+
+            // UI Elements Overlay
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp),
+                verticalArrangement = Arrangement.Bottom,
+                horizontalAlignment = Alignment.End
+            ) {
+                FloatingActionButton(
+                    onClick = { fetchCurrentLocation() },
+                    modifier = Modifier.padding(bottom = 16.dp),
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    contentColor = MaterialTheme.colorScheme.primary
+                ) {
+                    Icon(Icons.Default.MyLocation, contentDescription = "My Location")
+                }
+                
+                ExtendedFloatingActionButton(
+                    onClick = { viewModel.startAddingMarker(currentLocation) },
+                    icon = { Icon(Icons.Default.AddLocation, contentDescription = "Add Marker") },
+                    text = { Text("Catat Aktivitas", fontWeight = FontWeight.Bold) },
+                    containerColor = MaterialTheme.colorScheme.primary,
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                )
+            }
         }
 
         if (uiState.isAddingMarker) {
             ModalBottomSheet(
-                onDismissRequest = { viewModel.cancelAddingMarker() }
+                onDismissRequest = { viewModel.cancelAddingMarker() },
+                containerColor = MaterialTheme.colorScheme.surface,
+                tonalElevation = 8.dp
             ) {
                 AddMarkerContent(
                     uiState = uiState,
@@ -153,6 +184,9 @@ fun MainScreen(
         }
     }
 }
+
+
+
 
 @Composable
 fun AddMarkerContent(
@@ -183,33 +217,52 @@ fun AddMarkerContent(
         }
         Spacer(modifier = Modifier.height(8.dp))
         
-        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+            contentPadding = PaddingValues(horizontal = 4.dp)
+        ) {
             items(uiState.categories) { category ->
                 val isSelected = category.id == uiState.newMarkerCategoryId
-                val bgColor = if (isSelected) Color(category.colorHex) else Color.LightGray
-                val textColor = if (isSelected) Color.White else Color.Black
+                val bgColor by animateColorAsState(
+                    targetValue = if (isSelected) Color(category.colorHex) else MaterialTheme.colorScheme.surfaceVariant,
+                    label = "bgColorTransition"
+                )
+                val textColor by animateColorAsState(
+                    targetValue = if (isSelected) Color.White else MaterialTheme.colorScheme.onSurfaceVariant,
+                    label = "textColorTransition"
+                )
+                val scale by animateDpAsState(
+                    targetValue = if (isSelected) 4.dp else 0.dp,
+                    label = "elevationTransition"
+                )
                 
-                Box(
-                    modifier = Modifier
-                        .clip(RoundedCornerShape(16.dp))
-                        .background(bgColor)
-                        .clickable { onCategorySelect(category.id) }
-                        .padding(horizontal = 16.dp, vertical = 8.dp)
+                Surface(
+                    shape = RoundedCornerShape(16.dp),
+                    color = bgColor,
+                    shadowElevation = scale,
+                    modifier = Modifier.clickable { onCategorySelect(category.id) }
                 ) {
                     val catName = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
                             ?: category.customName 
                             ?: "Unknown"
-                    Text(text = catName, color = textColor)
+                    Text(
+                        text = catName, 
+                        color = textColor,
+                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 12.dp),
+                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
+                    )
                 }
             }
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(24.dp))
         OutlinedTextField(
             value = uiState.newMarkerNote,
             onValueChange = onNoteChange,
             label = { Text(stringResource(R.string.note_optional)) },
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(12.dp),
+            singleLine = true
         )
 
         Spacer(modifier = Modifier.height(24.dp))
