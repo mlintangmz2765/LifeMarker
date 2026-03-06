@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LifeMarker</string>
+    <string name="add_marker">Tambah Penanda</string>
+    <string name="select_category">Pilih Kategori</string>
+    <string name="note_optional">Catatan (Boleh kosong)</string>
+    <string name="save">Simpan</string>
+    <string name="cancel">Batal</string>
+    <string name="manage_categories">Kelola Kategori</string>
+    <string name="add_category">Tambah Kategori Baru</string>
+    <string name="category_name">Nama Kategori</string>
+    
+    <!-- Default Categories -->
+    <string name="cat_eat">Makan</string>
+    <string name="cat_toilet">Kencing / Berak / Toilet</string>
+    <string name="cat_pray">Sholat</string>
+</resources>

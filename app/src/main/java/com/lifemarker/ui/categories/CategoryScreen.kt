@@ -1,0 +1,188 @@
+package com.lifemarker.ui.categories
+
+import android.content.Context
+import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import com.lifemarker.R
+import com.lifemarker.domain.model.Category
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun CategoryScreen(
+    onNavigateBack: () -> Unit,
+    viewModel: CategoryViewModel = hiltViewModel()
+) {
+    val uiState by viewModel.uiState.collectAsState()
+    val context = LocalContext.current
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(R.string.manage_categories)) },
+                navigationIcon = {
+                    IconButton(onClick = onNavigateBack) {
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                    }
+                }
+            )
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = { viewModel.startAddingCategory() }) {
+                Icon(Icons.Default.Add, contentDescription = stringResource(R.string.add_category))
+            }
+        }
+    ) { paddingValues ->
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+                .padding(16.dp),
+            verticalArrangement = Arrangement.spacedBy(8.dp)
+        ) {
+            items(uiState.categories) { category ->
+                CategoryItem(category, context)
+            }
+        }
+
+        if (uiState.isAddingCategory) {
+            ModalBottomSheet(onDismissRequest = { viewModel.cancelAddingCategory() }) {
+                AddCategoryContent(
+                    uiState = uiState,
+                    onNameChange = viewModel::updateNewCategoryName,
+                    onColorChange = viewModel::updateNewCategoryColor,
+                    onSave = viewModel::saveCategory,
+                    onCancel = viewModel::cancelAddingCategory
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun CategoryItem(category: Category, context: Context) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(8.dp))
+            .background(Color.White)
+            .padding(16.dp),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Box(
+            modifier = Modifier
+                .size(40.dp)
+                .clip(CircleShape)
+                .background(Color(category.colorHex))
+        )
+        Spacer(modifier = Modifier.width(16.dp))
+        val catName = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
+                ?: category.customName 
+                ?: "Unknown"
+        Text(text = catName, style = MaterialTheme.typography.bodyLarge)
+    }
+}
+
+@Composable
+fun AddCategoryContent(
+    uiState: CategoryUiState,
+    onNameChange: (String) -> Unit,
+    onColorChange: (Int) -> Unit,
+    onSave: () -> Unit,
+    onCancel: () -> Unit
+) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(16.dp)
+    ) {
+        Text(stringResource(R.string.add_category), style = MaterialTheme.typography.titleLarge)
+        Spacer(modifier = Modifier.height(16.dp))
+
+        OutlinedTextField(
+            value = uiState.newCategoryName,
+            onValueChange = onNameChange,
+            label = { Text(stringResource(R.string.category_name)) },
+            modifier = Modifier.fillMaxWidth()
+        )
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text("Select Color", style = MaterialTheme.typography.titleMedium)
+        Spacer(modifier = Modifier.height(8.dp))
+        
+        val colors = listOf(
+            0xFFF44336.toInt(), // Red
+            0xFFE91E63.toInt(), // Pink
+            0xFF9C27B0.toInt(), // Purple
+            0xFF3F51B5.toInt(), // Indigo
+            0xFF2196F3.toInt(), // Blue
+            0xFF4CAF50.toInt(), // Green
+            0xFFFF9800.toInt(), // Orange
+            0xFF795548.toInt()  // Brown
+        )
+        
+        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            items(colors) { color ->
+                Box(
+                    modifier = Modifier
+                        .size(48.dp)
+                        .clip(CircleShape)
+                        .background(Color(color))
+                        .clickable { onColorChange(color) }
+                        .padding(4.dp)
+                ) {
+                    if (uiState.newCategoryColor == color) {
+                        Box(
+                            modifier = Modifier
+                                .fillMaxSize()
+                                .clip(CircleShape)
+                                .background(Color.White.copy(alpha = 0.5f))
+                        )
+                    }
+                }
+            }
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.End
+        ) {
+            TextButton(onClick = onCancel) {
+                Text(stringResource(R.string.cancel))
+            }
+            Spacer(modifier = Modifier.width(8.dp))
+            Button(
+                onClick = onSave,
+                enabled = uiState.newCategoryName.isNotBlank()
+            ) {
+                Text(stringResource(R.string.save))
+            }
+        }
+        Spacer(modifier = Modifier.height(16.dp))
+    }
+}
+
+private fun getIdentifier(context: Context, name: String): Int {
+    return context.resources.getIdentifier(name, "string", context.packageName)
+}
