@@ -295,7 +295,6 @@ fun MainScreen(
                     }
                 }
             }
-            // UI Elements Overlay
             Column(
                 modifier = Modifier
                     .fillMaxSize()

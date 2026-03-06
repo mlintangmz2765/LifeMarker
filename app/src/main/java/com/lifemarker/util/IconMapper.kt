@@ -48,7 +48,6 @@ object IconMapper {
     fun isEmoji(name: String): Boolean {
         if (name.isEmpty()) return false
         val firstChar = name[0].code
-        // Basic check for common emoji ranges
         return firstChar > 0x1F000 || name.any { it.code > 0x2000 }
     }
 }

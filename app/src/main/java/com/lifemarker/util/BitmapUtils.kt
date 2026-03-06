@@ -10,24 +10,21 @@ fun createCustomMarkerBitmapDescriptor(
     colorInt: Int,
     initial: String
 ): BitmapDescriptor {
-    val size = 90 // Pixel size for the marker
+    val size = 90
     val bitmap = Bitmap.createBitmap(size, size + 20, Bitmap.Config.ARGB_8888)
     val canvas = Canvas(bitmap)
 
-    // Shadow
     val shadowPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = android.graphics.Color.argb(50, 0, 0, 0)
         style = Paint.Style.FILL
     }
     canvas.drawCircle(size / 2f, size / 2f + 10f, size / 2f - 4f, shadowPaint)
 
-    // Base Color
     val paint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = colorInt
         style = Paint.Style.FILL
     }
 
-    // Border
     val borderPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = android.graphics.Color.WHITE
         style = Paint.Style.STROKE
@@ -38,7 +35,6 @@ fun createCustomMarkerBitmapDescriptor(
     canvas.drawCircle(radius, radius, radius - borderPaint.strokeWidth, paint)
     canvas.drawCircle(radius, radius, radius - borderPaint.strokeWidth, borderPaint)
 
-    // Text Initial
     val textPaint = Paint(Paint.ANTI_ALIAS_FLAG).apply {
         color = android.graphics.Color.WHITE
         textSize = 40f

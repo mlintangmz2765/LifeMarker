@@ -181,20 +181,14 @@ fun AddCategoryContent(
         Spacer(modifier = Modifier.height(8.dp))
         
         val colors = listOf(
-            // Reds & Pinks
             0xFFF44336.toInt(), 0xFFEF5350.toInt(), 0xFFE91E63.toInt(), 0xFFF06292.toInt(),
-            // Purples & Deep Purples
             0xFF9C27B0.toInt(), 0xFFBA68C8.toInt(), 0xFF673AB7.toInt(), 0xFF9575CD.toInt(),
-            // Blues & Indigos
             0xFF3F51B5.toInt(), 0xFF7986CB.toInt(), 0xFF2196F3.toInt(), 0xFF64B5F6.toInt(),
             0xFF03A9F4.toInt(), 0xFF4FC3F7.toInt(), 0xFF00BCD4.toInt(), 0xFF4DD0E1.toInt(),
-            // Greens
             0xFF009688.toInt(), 0xFF4DB6AC.toInt(), 0xFF4CAF50.toInt(), 0xFF81C784.toInt(),
             0xFF8BC34A.toInt(), 0xFFAED581.toInt(),
-            // Yellows & Oranges
             0xFFFFEB3B.toInt(), 0xFFFFF176.toInt(), 0xFFFFC107.toInt(), 0xFFFFD54F.toInt(),
             0xFFFF9800.toInt(), 0xFFFFB74D.toInt(), 0xFFFF5722.toInt(), 0xFFFF8A65.toInt(),
-            // Browns & Grays
             0xFF795548.toInt(), 0xFFA1887F.toInt(), 0xFF607D8B.toInt(), 0xFF90A4AE.toInt(),
             0xFF000000.toInt(), 0xFF757575.toInt()
         )
