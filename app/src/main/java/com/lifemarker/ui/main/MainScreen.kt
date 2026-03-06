@@ -12,18 +12,20 @@ import androidx.activity.result.PickVisualMediaRequest
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.background
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AddLocation
+import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Directions
+import androidx.compose.material.icons.filled.FilterList
 import androidx.compose.material.icons.filled.Image
 import androidx.compose.material.icons.filled.MyLocation
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -127,22 +129,17 @@ fun MainScreen(
                 ),
                 properties = MapProperties(isMyLocationEnabled = hasLocationPermission)
             ) {
-                uiState.markers.forEach { marker ->
-                    val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
-                    val iconName = marker.category?.iconName ?: "Place"
-
-                    MarkerComposable(
-                        keys = arrayOf(marker.id, categoryColor, iconName),
-                        state = MarkerState(position = LatLng(marker.latitude, marker.longitude)),
-                        title = marker.category?.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
-                                ?: marker.category?.customName 
-                                ?: "Marker",
-                        snippet = marker.note,
-                        onClick = {
-                            viewModel.startEditingMarker(marker)
-                            true
-                        }
-                    ) {
+                Clustering(
+                    items = uiState.filteredMarkers.map { MarkerClusterItem(it) },
+                    onClusterItemClick = { clusterItem ->
+                        viewModel.startEditingMarker(clusterItem.markerDetails)
+                        true
+                    },
+                    clusterItemContent = { clusterItem ->
+                        val marker = clusterItem.markerDetails
+                        val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
+                        val iconName = marker.category?.iconName ?: "Place"
+                        
                         Box(
                             modifier = Modifier
                                 .size(48.dp)
@@ -157,32 +154,96 @@ fun MainScreen(
                             )
                         }
                     }
-                }
+                )
             }
-            // Top Gradient Overlay
+            // Top Gradient Overlay + Search & Filter
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(80.dp)
+                    .wrapContentHeight()
                     .align(Alignment.TopCenter)
                     .background(
                         Brush.verticalGradient(
-                            colors = listOf(Color.Black.copy(alpha = 0.4f), Color.Transparent)
+                            colors = listOf(Color.Black.copy(alpha = 0.6f), Color.Transparent)
                         )
                     )
-            )
-
-            SmallFloatingActionButton(
-                onClick = onNavigateToSettings,
-                modifier = Modifier
-                    .padding(top = 48.dp, end = 16.dp)
-                    .align(Alignment.TopEnd),
-                containerColor = MaterialTheme.colorScheme.surface,
-                contentColor = MaterialTheme.colorScheme.primary
+                    .padding(top = 40.dp, start = 16.dp, end = 16.dp, bottom = 12.dp)
             ) {
-                Icon(Icons.Default.Settings, contentDescription = "Settings")
+                Column {
+                    // Search Bar
+                    Surface(
+                        shape = RoundedCornerShape(28.dp),
+                        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
+                        tonalElevation = 4.dp,
+                        modifier = Modifier.fillMaxWidth().height(56.dp)
+                    ) {
+                        Row(
+                             verticalAlignment = Alignment.CenterVertically,
+                             modifier = Modifier.padding(horizontal = 16.dp)
+                        ) {
+                             Icon(Icons.Default.Search, contentDescription = "Search", tint = MaterialTheme.colorScheme.primary)
+                             Spacer(modifier = Modifier.width(12.dp))
+                             BasicTextField(
+                                 value = uiState.searchQuery,
+                                 onValueChange = viewModel::updateSearchQuery,
+                                 modifier = Modifier.weight(1f),
+                                 textStyle = MaterialTheme.typography.bodyLarge.copy(color = MaterialTheme.colorScheme.onSurface),
+                                 decorationBox = { innerTextField ->
+                                     if (uiState.searchQuery.isEmpty()) {
+                                         Text("Cari catatan atau kategori...", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                     }
+                                     innerTextField()
+                                 }
+                             )
+                             if (uiState.searchQuery.isNotEmpty()) {
+                                 IconButton(onClick = { viewModel.updateSearchQuery("") }) {
+                                     Icon(Icons.Default.Clear, contentDescription = "Clear", tint = MaterialTheme.colorScheme.primary)
+                                 }
+                             }
+                             Spacer(modifier = Modifier.width(8.dp))
+                             IconButton(onClick = onNavigateToSettings) {
+                                 Icon(Icons.Default.Settings, contentDescription = "Settings", tint = MaterialTheme.colorScheme.primary)
+                             }
+                        }
+                    }
+                    
+                    Spacer(modifier = Modifier.height(12.dp))
+                    
+                    // Filter Chips
+                    LazyRow(
+                        horizontalArrangement = Arrangement.spacedBy(8.dp)
+                    ) {
+                        item {
+                            FilterChip(
+                                selected = uiState.selectedFilterCategoryId == null,
+                                onClick = { viewModel.clearCategoryFilter() },
+                                label = { Text("Semua") },
+                                leadingIcon = { Icon(Icons.Default.FilterList, "All", modifier = Modifier.size(18.dp)) },
+                                shape = RoundedCornerShape(12.dp)
+                            )
+                        }
+                        items(uiState.categories) { category ->
+                            val isSelected = uiState.selectedFilterCategoryId == category.id
+                            FilterChip(
+                                selected = isSelected,
+                                onClick = { viewModel.toggleCategoryFilter(category.id) },
+                                label = { 
+                                     val name = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } ?: (category.customName ?: "Cat")
+                                     Text(name) 
+                                },
+                                leadingIcon = {
+                                     Icon(
+                                         imageVector = com.lifemarker.util.IconMapper.getIconByName(category.iconName),
+                                         contentDescription = null,
+                                         modifier = Modifier.size(18.dp)
+                                     )
+                                },
+                                shape = RoundedCornerShape(12.dp)
+                            )
+                        }
+                    }
+                }
             }
-
             // UI Elements Overlay
             Column(
                 modifier = Modifier

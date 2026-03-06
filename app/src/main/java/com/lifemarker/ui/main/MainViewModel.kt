@@ -12,6 +12,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -26,7 +27,10 @@ data class MainUiState(
     val newMarkerCategoryId: Long? = null,
     val newMarkerPhotoUri: String? = null,
     val editingMarkerId: Long? = null,
-    val editingMarkerTimestamp: Long? = null
+    val editingMarkerTimestamp: Long? = null,
+    val searchQuery: String = "",
+    val selectedFilterCategoryId: Long? = null,
+    val filteredMarkers: List<MarkerDetails> = emptyList()
 )
 
 @HiltViewModel
@@ -40,8 +44,19 @@ class MainViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
-            markerRepository.getAllMarkers().collect { markers ->
-                _uiState.update { it.copy(markers = markers) }
+            combine(
+                markerRepository.getAllMarkers(),
+                _uiState.map { it.searchQuery },
+                _uiState.map { it.selectedFilterCategoryId }
+            ) { markers, query, filterId ->
+                markers.filter { marker ->
+                    val matchesQuery = query.isEmpty() || marker.note?.contains(query, ignoreCase = true) == true ||
+                            marker.category?.customName?.contains(query, ignoreCase = true) == true
+                    val matchesFilter = filterId == null || marker.categoryId == filterId
+                    matchesQuery && matchesFilter
+                }
+            }.collect { filtered ->
+                _uiState.update { it.copy(markers = filtered, filteredMarkers = filtered) }
             }
         }
         viewModelScope.launch {
@@ -51,6 +66,21 @@ class MainViewModel @Inject constructor(
                     it.copy(categories = categories, newMarkerCategoryId = selectedCategory) 
                 }
             }
+        }
+    }
+
+    fun updateSearchQuery(query: String) {
+        _uiState.update { it.copy(searchQuery = query) }
+    }
+
+    fun clearCategoryFilter() {
+        _uiState.update { it.copy(selectedFilterCategoryId = null) }
+    }
+
+    fun toggleCategoryFilter(categoryId: Long) {
+        _uiState.update { 
+            val newFilter = if (it.selectedFilterCategoryId == categoryId) null else categoryId
+            it.copy(selectedFilterCategoryId = newFilter)
         }
     }
 
