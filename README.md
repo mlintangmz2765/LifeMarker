@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app_icon.svg" width="128" height="128" alt="LifeMarker Logo">
+  <img src="assets/app_icon.svg" width="128" height="128" alt="LifeMarker Logo">
 </p>
 
 <h1 align="center">LifeMarker</h1>
