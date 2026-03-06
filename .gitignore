@@ -1,11 +1,39 @@
+# Android
 *.iml
 .gradle
 /local.properties
-/.idea/
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/modules.xml
+/.idea/deploymentTargetDropDown.xml
+/.idea/assetWizardSettings.xml
+/.idea/renderers.xml
+/.idea/vcs.xml
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+/.idea/jarRepositories.xml
+/.idea/shelf/
+/.idea/caches/
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
-keystore.jks
+/app/build
+/.vscode
+.DS_Store
+
+# Secrets and Keystores
+*.jks
+*.keystore
+*.p12
+google-services.json
+
+# Specialized files
+*.apk
+*.aar
+*.ap_
+*.dex
+*.class
