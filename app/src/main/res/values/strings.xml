@@ -38,6 +38,6 @@
     <string name="or_emoji">Or enter Emoji</string>
     <string name="sync_success">Sync successful</string>
     <string name="restart_required">Database restored. Please restart the app to refresh data.</string>
-    <string name="copyright">© mlintangmz</string>
+    <string name="copyright">© 2026 mlintangmz • v1.0</string>
     <string name="github_repo">GitHub Repository</string>
 </resources>

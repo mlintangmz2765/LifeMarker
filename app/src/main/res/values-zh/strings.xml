@@ -38,6 +38,6 @@
     <string name="or_emoji">或输入表情符号</string>
     <string name="sync_success">同步成功</string>
     <string name="restart_required">数据库已恢复。请重新启动应用以刷新数据。</string>
-    <string name="copyright">© mlintangmz</string>
+    <string name="copyright">© 2026 mlintangmz • v1.0</string>
     <string name="github_repo">GitHub 仓库</string>
 </resources>

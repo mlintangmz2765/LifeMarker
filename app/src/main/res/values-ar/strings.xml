@@ -38,6 +38,6 @@
     <string name="or_emoji">أو أدخل ملصق (Emoji)</string>
     <string name="sync_success">نجحت المزامنة</string>
     <string name="restart_required">تمت استعادة قاعدة البيانات. يرجى إعادة تشغيل التطبيق لتحديث البيانات.</string>
-    <string name="copyright">© mlintangmz</string>
+    <string name="copyright">© 2026 mlintangmz • v1.0</string>
     <string name="github_repo">مستودع GitHub</string>
 </resources>

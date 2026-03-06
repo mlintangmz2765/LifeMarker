@@ -38,6 +38,6 @@
     <string name="or_emoji">Или введите Эмодзи</string>
     <string name="sync_success">Синхронизация успешна</string>
     <string name="restart_required">База данных восстановлена. Пожалуйста, перезапустите приложение для обновления данных.</string>
-    <string name="copyright">© mlintangmz</string>
+    <string name="copyright">© 2026 mlintangmz • v1.0</string>
     <string name="github_repo">Репозиторий GitHub</string>
 </resources>
