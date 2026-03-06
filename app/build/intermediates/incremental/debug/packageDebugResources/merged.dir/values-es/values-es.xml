@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">Añadir nueva categoría</string>
+    <string name="add_marker">Añadir Marcador</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="attach_photo">Adjuntar foto</string>
+    <string name="auth_failed">Error de autenticación</string>
+    <string name="authenticating">Autenticando...</string>
+    <string name="backing_up">Copiando datos...</string>
+    <string name="backup">Copia de seguridad</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cat_eat">Comer</string>
+    <string name="cat_pray">Rezar</string>
+    <string name="cat_toilet">Baños</string>
+    <string name="category_name">Nombre de la categoría</string>
+    <string name="copyright">© mlintangmz</string>
+    <string name="filter_all">Todos</string>
+    <string name="github_repo">Repositorio GitHub</string>
+    <string name="google_drive_sync">Sincronización de Google Drive</string>
+    <string name="language">Idioma de la aplicación</string>
+    <string name="last_sync">Última sincronización: %1$s</string>
+    <string name="manage_categories">Gestionar categorías</string>
+    <string name="navigate_here">Navegar aquí</string>
+    <string name="no_backup">No hay copia de seguridad en Google Drive</string>
+    <string name="note_optional">Nota (Opcional)</string>
+    <string name="or_emoji">O introduce un Emoji</string>
+    <string name="record_activity">Registrar Actividad</string>
+    <string name="remove_attachment">Eliminar adjunto</string>
+    <string name="restart_required">Base de datos restaurada. Por favor, reinicia la aplicación para actualizar los datos.</string>
+    <string name="restore">Restaurar</string>
+    <string name="restoring">Restaurando datos...</string>
+    <string name="save">Guardar</string>
+    <string name="search_placeholder">Buscar notas o categorías...</string>
+    <string name="select_category">Seleccionar categoría</string>
+    <string name="select_color">Seleccionar color</string>
+    <string name="select_icon">Seleccionar icono</string>
+    <string name="select_language">Cambiar idioma de la interfaz</string>
+    <string name="settings">Ajustes</string>
+    <string name="sync_failed">Error de sincronización</string>
+    <string name="sync_success">Sincronización exitosa</string>
+</resources>

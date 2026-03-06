@@ -40,7 +40,6 @@ object DatabaseModule {
         .addCallback(object : RoomDatabase.Callback() {
             override fun onCreate(db: SupportSQLiteDatabase) {
                 super.onCreate(db)
-                // Seed initial data
                 CoroutineScope(Dispatchers.IO).launch {
                     val categoryDao = provider.get()
                     seedDefaultCategories(categoryDao)
@@ -61,20 +60,20 @@ object DatabaseModule {
             CategoryEntity(
                 isSystemGenerated = true,
                 systemNameKey = "cat_eat",
-                colorHex = 0xFFFF9800.toInt(), // Orange
-                iconName = "Restaurant" // Will map to Icons.Filled.Restaurant
+                colorHex = 0xFFFF9800.toInt(),
+                iconName = "Restaurant"
             ),
             CategoryEntity(
                 isSystemGenerated = true,
                 systemNameKey = "cat_toilet",
-                colorHex = 0xFF2196F3.toInt(), // Blue
+                colorHex = 0xFF2196F3.toInt(),
                 iconName = "Wc"
             ),
             CategoryEntity(
                 isSystemGenerated = true,
                 systemNameKey = "cat_pray",
-                colorHex = 0xFF4CAF50.toInt(), // Green
-                iconName = "Mosque" // Or Spa/SelfImprovement as generic
+                colorHex = 0xFF4CAF50.toInt(),
+                iconName = "SelfImprovement"
             )
         )
         defaultCategories.forEach { categoryDao.insertCategory(it) }

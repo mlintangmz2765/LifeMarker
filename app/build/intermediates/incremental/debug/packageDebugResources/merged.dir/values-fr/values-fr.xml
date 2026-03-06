@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">Ajouter une nouvelle catégorie</string>
+    <string name="add_marker">Ajouter un marqueur</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="attach_photo">Joindre une photo</string>
+    <string name="auth_failed">Échec de l\'authentification</string>
+    <string name="authenticating">Authentification...</string>
+    <string name="backing_up">Sauvegarde des données...</string>
+    <string name="backup">Sauvegarder</string>
+    <string name="cancel">Annuler</string>
+    <string name="cat_eat">Manger</string>
+    <string name="cat_pray">Prier</string>
+    <string name="cat_toilet">Toilettes</string>
+    <string name="category_name">Nom de la catégorie</string>
+    <string name="copyright">© mlintangmz</string>
+    <string name="filter_all">Tout</string>
+    <string name="github_repo">Dépôt GitHub</string>
+    <string name="google_drive_sync">Synchronisation Google Drive</string>
+    <string name="language">Langue de l\'application</string>
+    <string name="last_sync">Dernière synchro : %1$s</string>
+    <string name="manage_categories">Gérer les catégories</string>
+    <string name="navigate_here">Naviguer ici</string>
+    <string name="no_backup">Aucune sauvegarde pada Google Drive</string>
+    <string name="note_optional">Note (Optionnel)</string>
+    <string name="or_emoji">Ou entrez un Emoji</string>
+    <string name="record_activity">Enregistrer l\'activité</string>
+    <string name="remove_attachment">Supprimer la pièce jointe</string>
+    <string name="restart_required">Base de données restaurée. Veuillez redémarrer l\'application untuk rafraîchir les données.</string>
+    <string name="restore">Restaurer</string>
+    <string name="restoring">Restauration des données...</string>
+    <string name="save">Enregistrer</string>
+    <string name="search_placeholder">Rechercher des notes ou des catégories...</string>
+    <string name="select_category">Sélectionner une catégorie</string>
+    <string name="select_color">Choisir la couleur</string>
+    <string name="select_icon">Choisir l\'icône</string>
+    <string name="select_language">Changer la langue de l\'interface</string>
+    <string name="settings">Paramètres</string>
+    <string name="sync_failed">Échec de la synchronisation</string>
+    <string name="sync_success">Synchronisation réussie</string>
+</resources>

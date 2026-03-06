@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.lifemarker.app-mergeDebugResources-64:/values-v26/values-v26.xml",
+            "outputFile": "com.lifemarker.app-mergeDebugResources-67:/values-v26/values-v26.xml",
             "map": [
                 {
-                    "source": "/mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2732ef8a35c836b39701930a886e70c3/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
+                    "source": "/home/lintang/.gradle/caches/8.11.1/transforms/d54f6dc1a28a7bf0c9edaa6673e45b12/transformed/appcompat-1.6.1/res/values-v26/values-v26.xml",
                     "from": {
                         "startLines": "2,3,4,8,12,16",
                         "startColumns": "4,4,4,4,4,4",

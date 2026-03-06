@@ -1,98 +1,108 @@
 -- Merging decision tree log ---
 meta-data#com.google.android.geo.API_KEY
-INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:23:9-25:48
+INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:22:9-24:48
 	android:value
 		INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:24:13-45
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:24:13-58
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:23:13-58
 manifest
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-38:12
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a9a2269562257209dce49dd1b65ab1cd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2732ef8a35c836b39701930a886e70c3/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.maps.android:maps-compose:4.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/14ffb0b4d184ed797879e78f6c2ae446/transformed/maps-compose-4.3.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/92f3388cfac2e672d00a2dbf38e344ec/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a420f6000ae0a895f6a133bd722b717d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c0568f63f4917cd821a2977ec55a0b56/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-common:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/1b719ac2c99ffa194c3aae42520c41c0/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/88bc664535a2de58359f1d88b8e6ce2b/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2c6a1fdf5585207f1909e818f2583cec/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eee2a881e532850b96f750f5a30760c6/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8b1ee10207f29fb6a316a24ed4b78c08/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.dagger:hilt-android:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/67b651e2c0b1bfc34b1f57cd948423ae/transformed/hilt-android-2.51.1/AndroidManifest.xml:16:1-19:12
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6ce31af894c67e1f63d23be02936c4ba/transformed/material3-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.material:material-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19f46a25ef7a9a99b485dc2bd2eee2d0/transformed/material-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/266e36a5ab11d94a4f3edfc8a335a27a/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9488a50f195266638736a97ceec27967/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3c0e25d0c42aab341e76c8db67e87cfc/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cdedb75aa604a4d4a30a8e85c2940aad/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.animation:animation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9ad0586b06954b06c15c3ed2a87f9a42/transformed/animation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19817a1c457ce92b9fbdd9c6d5fd966f/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c0dcad109f2e3b837a844a92d482a46/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e6886d3bf2f9460a70f0d11e5512812c/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2d848ac06c3aa2da39af712764f41da2/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f7776c604a70fc3c536be3fb5aa875b6/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/af50c4727c7fc331e0c6dfb0c6d67bb0/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e1e149ada051b7eb7a27003ece60bbb/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c4e30e2014f46c49c9749626eb373c26/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f2625c429f3403206df105e75277894f/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.maps.android:maps-ktx:5.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/aaa9bd7bea24d1ed7c0544ae5f560fc6/transformed/maps-ktx-5.0.0/AndroidManifest.xml:18:1-23:12
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
-MERGED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:17:1-40:12
-MERGED from [com.google.android.gms:play-services-location:21.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0db561a2e487025d359ba298828d9356/transformed/play-services-location-21.1.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/45fe7dbc97f8da7aa28735500647a017/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a64017c0736dd0869faa12931f7c2e1d/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/40a7e8e264207757a3111bf5fd72b004/transformed/play-services-fido-20.0.1/AndroidManifest.xml:2:1-10:12
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85bc59b168a6d9220dd4ad5e6397afa6/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:16:1-26:12
-MERGED from [androidx.fragment:fragment:1.5.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/bfeb9bc86c8c849b8d91d3d2495604da/transformed/fragment-1.5.7/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e5e78f2c78cba287b10d6bffa82e031d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ab28b9204753d68d1ecd331d1ea18aab/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eb63204d99e76502dfc79519f22d1313/transformed/loader-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8d2703f0359f01ed8fa16823347aa058/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/61a77844ca3e22f4d69e3f310e1a0415/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c7d79a8306f0b9d7ff222fdadd2f960/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e18fe83c51a09f6e465b6d02c4dc66c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0a7fa2217efb4221242d5d6c4e4408e9/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a8b80c8c907bde7f926ca66ae0ef1894/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cc14e3fc439a8712633dbfcdffa1ee08/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/435ec6786324001b22ce26c26d518743/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.ui:ui-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/38ab9bb50f06431444e677b632e4d027/transformed/ui-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity-ktx:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/01748ddad22ec5dc477e175aef0ee968/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity-compose:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ac5c42b712b96ca938cb43f7e2d334ad/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.activity:activity:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/97c36b23be7a20bd9b83d2c0d0f3a7b7/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/48970cd9160346b4bb32b990d3aa60e1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8dd46d34b2dba6eb31ae59eb5691b148/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/55a87ad2e9d2ffd660f7d1c5a544b886/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ea2e932b7e3a230357e8188ba19a14d6/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.autofill:autofill:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/092aba81ec90b4e19cc6cd2b5f12f7f3/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/4c965983c5e2822807cd7dfc1f3ce9c5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
-MERGED from [androidx.core:core-ktx:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d7dc720b4c9dfdf6c50df1ff21d28679/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.room:room-ktx:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0c32a73d5674211725a4fc4172d42fff/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/dfe3c31effdd4ec0508a4d2d708be390/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9f1b9aab12e2f5e7b6e8a34f19dc9f76/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a99d5bb509192ef28a83b80a80df08d5/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/87d4c94a20ddd5e93e973789f76e87d8/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2120f92d07f24500dd3bdd38e4b13020/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/82fd798d1ddc988d6fef61401d623316/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d941b9dc9abf5b31060216626eef2b8e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3ceb36226d33a9f4733e04288be7acde/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/031bea004fa0ab79ea24c85aafcf3610/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ed2acd21b75fc53a1a329db425fa46bb/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:viewbinding:7.4.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/04c504cea2a0c208f9cd0b147bbd26f9/transformed/viewbinding-7.4.2/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b91bfbf97fbbaa2563adfc378d327a38/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:16:1-19:12
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:1-37:12
+MERGED from [io.coil-kt:coil-compose:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/2b9d540607b4e53613a1b210f3adb1f9/transformed/coil-compose-2.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-compose-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/705ccee4f587be53b5878ea42029e263/transformed/coil-compose-base-2.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/9868309f6a018c987a0cd7ca14aa4f80/transformed/coil-2.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [io.coil-kt:coil-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/f601ef39a0735adbdf0c4b3e8e3a82ca/transformed/coil-base-2.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/0f3ce11167d5b5383706728128cf0161/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d54f6dc1a28a7bf0c9edaa6673e45b12/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.maps.android:maps-compose-utils:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/af9d37c4fdc0c45db76fde442415c0a8/transformed/maps-compose-utils-4.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.maps.android:maps-compose:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/a6d64213abe2d6e1be42dadd04ef505c/transformed/maps-compose-4.3.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/299d067e6a7e8c0ec7c29fe03ed1bd23/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/c2addcfce49bf81435f4d329027d284d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b90f717fd12c5f5423358dffa4dd001c/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/20dcd63f78da2f53e04458a0192841fc/transformed/navigation-common-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/e7d8916d847d28668edfbd20cc717571/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/a6711803a2eb5ecf58c07cd4cf0add84/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/d415bc820993e1ec977ce3bce9323bf8/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/944b9ef717f10e483e637649db7ed6a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.dagger:hilt-android:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/9f8b632e65bd49203a3c1d1dfa192d99/transformed/hilt-android-2.51.1/AndroidManifest.xml:16:1-19:12
+MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/e58ee7605cec895b379908c07f7a8103/transformed/maps-ktx-5.0.0/AndroidManifest.xml:18:1-23:12
+MERGED from [com.google.maps.android:maps-utils-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/c4499dd726fbfe77c6f8162e1520706e/transformed/maps-utils-ktx-5.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/d5923113e22450a37b903ff6dcc4f81c/transformed/play-services-location-21.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/e7195dcbb5e98e9276170338932d08d5/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /home/lintang/.gradle/caches/8.11.1/transforms/c9bfb607d05d69c5222cd48f4bba2488/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/93b18f10551ca94cd1fd1525f0b63bd4/transformed/play-services-fido-20.0.1/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:16:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/c36cf378372dcbba559c12c66362795a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.5.7] /home/lintang/.gradle/caches/8.11.1/transforms/9766189b27d8aff9aadc66eb75a056f1/transformed/fragment-1.5.7/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/16e16b82a92e4e7b9bba594ebcfe14a0/transformed/material3-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.material:material-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/2f0b6f1f5d74f908af8979df8d13e97b/transformed/material-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/137d963964fc251a2786d1f4a350e8cd/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1a1696a0cec4c82b9a838c0a6400c3e7/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/7de084cded3c75a0176716569c93d35b/transformed/material-ripple-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/566352e81ebbcbb24fd5082958346876/transformed/animation-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8a3e54507b3f099f75685c550aafb158/transformed/animation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a665e2c3df49587454a114ef9c1808ba/transformed/foundation-layout-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/b20e7d0fef60328cc5f0fc986cd51aaa/transformed/foundation-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1980db17f42714fb55b65bedd61bbb83/transformed/ui-tooling-data-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/58613c6149c66d9bf37a4a5fa2dd9a76/transformed/ui-unit-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/de2ee1c27872a31de87752526919eccc/transformed/ui-geometry-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8e5cce148ce92dcaf8b0d450d2e2e56e/transformed/ui-util-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/5b542b5cfa0a79726c1d275c5dec368a/transformed/ui-text-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a0f95c03d9689b4c33c3444bfd713eec/transformed/ui-tooling-preview-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/68401cb29ac156b90fbe8a9d7d2eba86/transformed/ui-graphics-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/a4c4bbd3fcd6f28898130046e66ed0f5/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/cd7979fc10e46d0d9524de731740858d/transformed/savedstate-1.2.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/6404c627eb75844550644e0dc2be7375/transformed/loader-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/35137947b5503898818cd51c535f4afe/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/d198c48a8fcd666137fc98ad2153bd9d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/bc48278add661962a5ac32764bdae066/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/57de3193223c1554f828e32ca33e7d08/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/1f0a3af6ba6f8feb483f142fa390c9c2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/503c0f92e34c197c53033ab3899a312d/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/02d38b6cebf67ef7e3c641a7ce9b564a/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/08864c44e08860a03a6c1f8388182583/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/lintang/.gradle/caches/8.11.1/transforms/e34ba4eaca8f4f3f618f2b312bc4c575/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.compose.ui:ui-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/da4f4b65004b866da6704b174061634c/transformed/ui-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/cdee19919f270eab1960f7dbccc760a4/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/2b4f07c3109cca1f80e930e5d1be15dc/transformed/activity-compose-1.8.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/efef33eb21746abd27229b57f4463656/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c930a96b1ed4b93a89de5ee6e04977df/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c1d8160dff93ef8854534bad64aad6de/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/f9803170cab00a7c3bf7d47274009c0b/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/80d671bd657b3a4c37a45d5bb8d23b9c/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.autofill:autofill:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/52bafbc89e5d8c5d1511621ef1bff9ed/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/03dcc26c64e0c2d2cfec2989aee7afce/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/2a93291b0c40f8c7d90a08a115d7c7ee/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d9fd52b44e65063c48d7ddef540bf648/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-splashscreen:1.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/0dee70eeca4a198f5ee79623d7c8f36a/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/7cd2a456e9b56c7959a23f6ff43630aa/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/e6ca57d292b9d3dd92be1d3d73d05d84/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/25f6cd291c6f0fbfc424326494d0caa2/transformed/runtime-saveable-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/054046d5463ad8562685e954674a6298/transformed/runtime-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/ee091f0c7308ef45fcba5929e70c673f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/7c91a5ab61ef46679d8dee62502e2d8a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/003075803141af863c590d2c7e0a9d57/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/19545ac238602b48da7363bf52d5d46f/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/9954c41315cd1d8028655680c2a17b63/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/b0b7cd7b30df8f0dd559848c72dbeac8/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:viewbinding:7.4.2] /home/lintang/.gradle/caches/8.11.1/transforms/6c313a26aba16a82ba1519371d2385a4/transformed/viewbinding-7.4.2/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/lintang/.gradle/caches/8.11.1/transforms/14c9003ff9fc5629291b30a496790eda/transformed/exifinterface-1.3.7/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/7cffb9699eb5500700f3f7775daf2b5c/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:16:1-19:12
 	package
 		INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -102,437 +112,463 @@ MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /mnt/E47C0DE17C0DAF7C/gam
 	xmlns:android
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:4:5-79
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:4:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:5:5-81
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:5:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:7:5-66
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:6:5-66
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:7:22-64
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:8:5-71
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:7:5-71
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:8:22-68
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:7:22-68
 application
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:10:5-36:19
-INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:10:5-36:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
-MERGED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:22:5-38:19
-MERGED from [com.google.android.gms:play-services-location:21.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0db561a2e487025d359ba298828d9356/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:21.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0db561a2e487025d359ba298828d9356/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/40a7e8e264207757a3111bf5fd72b004/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/40a7e8e264207757a3111bf5fd72b004/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85bc59b168a6d9220dd4ad5e6397afa6/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85bc59b168a6d9220dd4ad5e6397afa6/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/82fd798d1ddc988d6fef61401d623316/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/82fd798d1ddc988d6fef61401d623316/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:9:5-35:19
+INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:9:5-35:19
+MERGED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/d5923113e22450a37b903ff6dcc4f81c/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/d5923113e22450a37b903ff6dcc4f81c/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/93b18f10551ca94cd1fd1525f0b63bd4/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/93b18f10551ca94cd1fd1525f0b63bd4/transformed/play-services-fido-20.0.1/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/c36cf378372dcbba559c12c66362795a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/c36cf378372dcbba559c12c66362795a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/7c91a5ab61ef46679d8dee62502e2d8a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/7c91a5ab61ef46679d8dee62502e2d8a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
 		INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
 	android:localeConfig
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:19:9-51
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:16:9-41
 	android:fullBackupContent
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:13:9-54
 	android:roundIcon
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:17:9-54
 	android:icon
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:12:9-35
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:11:9-36
 	android:theme
 		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:20:9-48
+	android:networkSecurityConfig
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:14:9-69
 	android:dataExtractionRules
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:13:9-65
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:12:9-65
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:11:9-38
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:10:9-38
 activity#com.lifemarker.MainActivity
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:27:9-35:20
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:26:9-34:20
 	android:exported
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:28:13-36
 	android:theme
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:30:13-52
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:28:13-41
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:31:13-34:29
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:30:13-33:29
 action#android.intent.action.MAIN
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:32:17-69
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:31:17-69
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:32:25-66
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:31:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:33:17-77
+ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:33:27-74
+		ADDED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml:32:27-74
 uses-sdk
 INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
 INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a9a2269562257209dce49dd1b65ab1cd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a9a2269562257209dce49dd1b65ab1cd/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2732ef8a35c836b39701930a886e70c3/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2732ef8a35c836b39701930a886e70c3/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.maps.android:maps-compose:4.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/14ffb0b4d184ed797879e78f6c2ae446/transformed/maps-compose-4.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.maps.android:maps-compose:4.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/14ffb0b4d184ed797879e78f6c2ae446/transformed/maps-compose-4.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/92f3388cfac2e672d00a2dbf38e344ec/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/92f3388cfac2e672d00a2dbf38e344ec/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a420f6000ae0a895f6a133bd722b717d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a420f6000ae0a895f6a133bd722b717d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c0568f63f4917cd821a2977ec55a0b56/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.hilt:hilt-navigation:1.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c0568f63f4917cd821a2977ec55a0b56/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/1b719ac2c99ffa194c3aae42520c41c0/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/1b719ac2c99ffa194c3aae42520c41c0/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/88bc664535a2de58359f1d88b8e6ce2b/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-runtime:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/88bc664535a2de58359f1d88b8e6ce2b/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2c6a1fdf5585207f1909e818f2583cec/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2c6a1fdf5585207f1909e818f2583cec/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eee2a881e532850b96f750f5a30760c6/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eee2a881e532850b96f750f5a30760c6/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8b1ee10207f29fb6a316a24ed4b78c08/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [androidx.navigation:navigation-compose:2.7.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8b1ee10207f29fb6a316a24ed4b78c08/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
-MERGED from [com.google.dagger:hilt-android:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/67b651e2c0b1bfc34b1f57cd948423ae/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:hilt-android:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/67b651e2c0b1bfc34b1f57cd948423ae/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6ce31af894c67e1f63d23be02936c4ba/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material3:material3-android:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6ce31af894c67e1f63d23be02936c4ba/transformed/material3-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.material:material-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19f46a25ef7a9a99b485dc2bd2eee2d0/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19f46a25ef7a9a99b485dc2bd2eee2d0/transformed/material-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/266e36a5ab11d94a4f3edfc8a335a27a/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/266e36a5ab11d94a4f3edfc8a335a27a/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9488a50f195266638736a97ceec27967/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9488a50f195266638736a97ceec27967/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3c0e25d0c42aab341e76c8db67e87cfc/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3c0e25d0c42aab341e76c8db67e87cfc/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cdedb75aa604a4d4a30a8e85c2940aad/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cdedb75aa604a4d4a30a8e85c2940aad/transformed/animation-core-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9ad0586b06954b06c15c3ed2a87f9a42/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.animation:animation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9ad0586b06954b06c15c3ed2a87f9a42/transformed/animation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19817a1c457ce92b9fbdd9c6d5fd966f/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/19817a1c457ce92b9fbdd9c6d5fd966f/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c0dcad109f2e3b837a844a92d482a46/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c0dcad109f2e3b837a844a92d482a46/transformed/foundation-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e6886d3bf2f9460a70f0d11e5512812c/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e6886d3bf2f9460a70f0d11e5512812c/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2d848ac06c3aa2da39af712764f41da2/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2d848ac06c3aa2da39af712764f41da2/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f7776c604a70fc3c536be3fb5aa875b6/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f7776c604a70fc3c536be3fb5aa875b6/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/af50c4727c7fc331e0c6dfb0c6d67bb0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/af50c4727c7fc331e0c6dfb0c6d67bb0/transformed/ui-util-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e1e149ada051b7eb7a27003ece60bbb/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e1e149ada051b7eb7a27003ece60bbb/transformed/ui-text-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c4e30e2014f46c49c9749626eb373c26/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/c4e30e2014f46c49c9749626eb373c26/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f2625c429f3403206df105e75277894f/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/f2625c429f3403206df105e75277894f/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
-MERGED from [com.google.maps.android:maps-ktx:5.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/aaa9bd7bea24d1ed7c0544ae5f560fc6/transformed/maps-ktx-5.0.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.maps.android:maps-ktx:5.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/aaa9bd7bea24d1ed7c0544ae5f560fc6/transformed/maps-ktx-5.0.0/AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:21.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0db561a2e487025d359ba298828d9356/transformed/play-services-location-21.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:21.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0db561a2e487025d359ba298828d9356/transformed/play-services-location-21.1.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/45fe7dbc97f8da7aa28735500647a017/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/45fe7dbc97f8da7aa28735500647a017/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a64017c0736dd0869faa12931f7c2e1d/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a64017c0736dd0869faa12931f7c2e1d/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/40a7e8e264207757a3111bf5fd72b004/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-fido:20.0.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/40a7e8e264207757a3111bf5fd72b004/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85bc59b168a6d9220dd4ad5e6397afa6/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85bc59b168a6d9220dd4ad5e6397afa6/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:18:5-43
-MERGED from [androidx.fragment:fragment:1.5.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/bfeb9bc86c8c849b8d91d3d2495604da/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.5.7] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/bfeb9bc86c8c849b8d91d3d2495604da/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e5e78f2c78cba287b10d6bffa82e031d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e5e78f2c78cba287b10d6bffa82e031d/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ab28b9204753d68d1ecd331d1ea18aab/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ab28b9204753d68d1ecd331d1ea18aab/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eb63204d99e76502dfc79519f22d1313/transformed/loader-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.loader:loader:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/eb63204d99e76502dfc79519f22d1313/transformed/loader-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8d2703f0359f01ed8fa16823347aa058/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8d2703f0359f01ed8fa16823347aa058/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/61a77844ca3e22f4d69e3f310e1a0415/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/61a77844ca3e22f4d69e3f310e1a0415/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c7d79a8306f0b9d7ff222fdadd2f960/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5c7d79a8306f0b9d7ff222fdadd2f960/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e18fe83c51a09f6e465b6d02c4dc66c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2e18fe83c51a09f6e465b6d02c4dc66c/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0a7fa2217efb4221242d5d6c4e4408e9/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0a7fa2217efb4221242d5d6c4e4408e9/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a8b80c8c907bde7f926ca66ae0ef1894/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a8b80c8c907bde7f926ca66ae0ef1894/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cc14e3fc439a8712633dbfcdffa1ee08/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cc14e3fc439a8712633dbfcdffa1ee08/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/435ec6786324001b22ce26c26d518743/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/435ec6786324001b22ce26c26d518743/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/38ab9bb50f06431444e677b632e4d027/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.ui:ui-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/38ab9bb50f06431444e677b632e4d027/transformed/ui-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/01748ddad22ec5dc477e175aef0ee968/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-ktx:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/01748ddad22ec5dc477e175aef0ee968/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-compose:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ac5c42b712b96ca938cb43f7e2d334ad/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity-compose:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ac5c42b712b96ca938cb43f7e2d334ad/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.activity:activity:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/97c36b23be7a20bd9b83d2c0d0f3a7b7/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/97c36b23be7a20bd9b83d2c0d0f3a7b7/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/48970cd9160346b4bb32b990d3aa60e1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/48970cd9160346b4bb32b990d3aa60e1/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8dd46d34b2dba6eb31ae59eb5691b148/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/8dd46d34b2dba6eb31ae59eb5691b148/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/55a87ad2e9d2ffd660f7d1c5a544b886/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/55a87ad2e9d2ffd660f7d1c5a544b886/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ea2e932b7e3a230357e8188ba19a14d6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ea2e932b7e3a230357e8188ba19a14d6/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.autofill:autofill:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/092aba81ec90b4e19cc6cd2b5f12f7f3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.autofill:autofill:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/092aba81ec90b4e19cc6cd2b5f12f7f3/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/4c965983c5e2822807cd7dfc1f3ce9c5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/4c965983c5e2822807cd7dfc1f3ce9c5/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
-MERGED from [androidx.core:core-ktx:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d7dc720b4c9dfdf6c50df1ff21d28679/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d7dc720b4c9dfdf6c50df1ff21d28679/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0c32a73d5674211725a4fc4172d42fff/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0c32a73d5674211725a4fc4172d42fff/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/dfe3c31effdd4ec0508a4d2d708be390/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/dfe3c31effdd4ec0508a4d2d708be390/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9f1b9aab12e2f5e7b6e8a34f19dc9f76/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/9f1b9aab12e2f5e7b6e8a34f19dc9f76/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a99d5bb509192ef28a83b80a80df08d5/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/a99d5bb509192ef28a83b80a80df08d5/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/87d4c94a20ddd5e93e973789f76e87d8/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/87d4c94a20ddd5e93e973789f76e87d8/transformed/runtime-release/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2120f92d07f24500dd3bdd38e4b13020/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/2120f92d07f24500dd3bdd38e4b13020/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/82fd798d1ddc988d6fef61401d623316/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/82fd798d1ddc988d6fef61401d623316/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d941b9dc9abf5b31060216626eef2b8e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/d941b9dc9abf5b31060216626eef2b8e/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3ceb36226d33a9f4733e04288be7acde/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/3ceb36226d33a9f4733e04288be7acde/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/031bea004fa0ab79ea24c85aafcf3610/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/031bea004fa0ab79ea24c85aafcf3610/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ed2acd21b75fc53a1a329db425fa46bb/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/ed2acd21b75fc53a1a329db425fa46bb/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:viewbinding:7.4.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/04c504cea2a0c208f9cd0b147bbd26f9/transformed/viewbinding-7.4.2/AndroidManifest.xml:5:5-44
-MERGED from [androidx.databinding:viewbinding:7.4.2] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/04c504cea2a0c208f9cd0b147bbd26f9/transformed/viewbinding-7.4.2/AndroidManifest.xml:5:5-44
-MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b91bfbf97fbbaa2563adfc378d327a38/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
-MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b91bfbf97fbbaa2563adfc378d327a38/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [io.coil-kt:coil-compose:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/2b9d540607b4e53613a1b210f3adb1f9/transformed/coil-compose-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/2b9d540607b4e53613a1b210f3adb1f9/transformed/coil-compose-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/705ccee4f587be53b5878ea42029e263/transformed/coil-compose-base-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-compose-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/705ccee4f587be53b5878ea42029e263/transformed/coil-compose-base-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/9868309f6a018c987a0cd7ca14aa4f80/transformed/coil-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/9868309f6a018c987a0cd7ca14aa4f80/transformed/coil-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/f601ef39a0735adbdf0c4b3e8e3a82ca/transformed/coil-base-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [io.coil-kt:coil-base:2.6.0] /home/lintang/.gradle/caches/8.11.1/transforms/f601ef39a0735adbdf0c4b3e8e3a82ca/transformed/coil-base-2.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/0f3ce11167d5b5383706728128cf0161/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/0f3ce11167d5b5383706728128cf0161/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d54f6dc1a28a7bf0c9edaa6673e45b12/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d54f6dc1a28a7bf0c9edaa6673e45b12/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:maps-compose-utils:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/af9d37c4fdc0c45db76fde442415c0a8/transformed/maps-compose-utils-4.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:maps-compose-utils:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/af9d37c4fdc0c45db76fde442415c0a8/transformed/maps-compose-utils-4.3.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:maps-compose:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/a6d64213abe2d6e1be42dadd04ef505c/transformed/maps-compose-4.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.maps.android:maps-compose:4.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/a6d64213abe2d6e1be42dadd04ef505c/transformed/maps-compose-4.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/299d067e6a7e8c0ec7c29fe03ed1bd23/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/299d067e6a7e8c0ec7c29fe03ed1bd23/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/c2addcfce49bf81435f4d329027d284d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation-compose:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/c2addcfce49bf81435f4d329027d284d/transformed/hilt-navigation-compose-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b90f717fd12c5f5423358dffa4dd001c/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.hilt:hilt-navigation:1.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b90f717fd12c5f5423358dffa4dd001c/transformed/hilt-navigation-1.2.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/20dcd63f78da2f53e04458a0192841fc/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/20dcd63f78da2f53e04458a0192841fc/transformed/navigation-common-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/e7d8916d847d28668edfbd20cc717571/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/e7d8916d847d28668edfbd20cc717571/transformed/navigation-runtime-2.7.7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/a6711803a2eb5ecf58c07cd4cf0add84/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/a6711803a2eb5ecf58c07cd4cf0add84/transformed/navigation-common-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/d415bc820993e1ec977ce3bce9323bf8/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/d415bc820993e1ec977ce3bce9323bf8/transformed/navigation-runtime-ktx-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/944b9ef717f10e483e637649db7ed6a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose:2.7.7] /home/lintang/.gradle/caches/8.11.1/transforms/944b9ef717f10e483e637649db7ed6a5/transformed/navigation-compose-2.7.7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.dagger:hilt-android:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/9f8b632e65bd49203a3c1d1dfa192d99/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:hilt-android:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/9f8b632e65bd49203a3c1d1dfa192d99/transformed/hilt-android-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/e58ee7605cec895b379908c07f7a8103/transformed/maps-ktx-5.0.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.maps.android:maps-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/e58ee7605cec895b379908c07f7a8103/transformed/maps-ktx-5.0.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.maps.android:maps-utils-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/c4499dd726fbfe77c6f8162e1520706e/transformed/maps-utils-ktx-5.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:maps-utils-ktx:5.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/c4499dd726fbfe77c6f8162e1520706e/transformed/maps-utils-ktx-5.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/d5923113e22450a37b903ff6dcc4f81c/transformed/play-services-location-21.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:21.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/d5923113e22450a37b903ff6dcc4f81c/transformed/play-services-location-21.1.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/e7195dcbb5e98e9276170338932d08d5/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/e7195dcbb5e98e9276170338932d08d5/transformed/play-services-auth-api-phone-18.0.2/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /home/lintang/.gradle/caches/8.11.1/transforms/c9bfb607d05d69c5222cd48f4bba2488/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:18.0.10] /home/lintang/.gradle/caches/8.11.1/transforms/c9bfb607d05d69c5222cd48f4bba2488/transformed/play-services-auth-base-18.0.10/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/93b18f10551ca94cd1fd1525f0b63bd4/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-fido:20.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/93b18f10551ca94cd1fd1525f0b63bd4/transformed/play-services-fido-20.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/c36cf378372dcbba559c12c66362795a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /home/lintang/.gradle/caches/8.11.1/transforms/c36cf378372dcbba559c12c66362795a/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.5.7] /home/lintang/.gradle/caches/8.11.1/transforms/9766189b27d8aff9aadc66eb75a056f1/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.5.7] /home/lintang/.gradle/caches/8.11.1/transforms/9766189b27d8aff9aadc66eb75a056f1/transformed/fragment-1.5.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/16e16b82a92e4e7b9bba594ebcfe14a0/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/16e16b82a92e4e7b9bba594ebcfe14a0/transformed/material3-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material:material-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/2f0b6f1f5d74f908af8979df8d13e97b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/2f0b6f1f5d74f908af8979df8d13e97b/transformed/material-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/137d963964fc251a2786d1f4a350e8cd/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/137d963964fc251a2786d1f4a350e8cd/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1a1696a0cec4c82b9a838c0a6400c3e7/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1a1696a0cec4c82b9a838c0a6400c3e7/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/7de084cded3c75a0176716569c93d35b/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/7de084cded3c75a0176716569c93d35b/transformed/material-ripple-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/566352e81ebbcbb24fd5082958346876/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/566352e81ebbcbb24fd5082958346876/transformed/animation-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8a3e54507b3f099f75685c550aafb158/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8a3e54507b3f099f75685c550aafb158/transformed/animation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a665e2c3df49587454a114ef9c1808ba/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a665e2c3df49587454a114ef9c1808ba/transformed/foundation-layout-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/b20e7d0fef60328cc5f0fc986cd51aaa/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/b20e7d0fef60328cc5f0fc986cd51aaa/transformed/foundation-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1980db17f42714fb55b65bedd61bbb83/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-data-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/1980db17f42714fb55b65bedd61bbb83/transformed/ui-tooling-data-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/58613c6149c66d9bf37a4a5fa2dd9a76/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/58613c6149c66d9bf37a4a5fa2dd9a76/transformed/ui-unit-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/de2ee1c27872a31de87752526919eccc/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/de2ee1c27872a31de87752526919eccc/transformed/ui-geometry-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8e5cce148ce92dcaf8b0d450d2e2e56e/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/8e5cce148ce92dcaf8b0d450d2e2e56e/transformed/ui-util-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/5b542b5cfa0a79726c1d275c5dec368a/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/5b542b5cfa0a79726c1d275c5dec368a/transformed/ui-text-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a0f95c03d9689b4c33c3444bfd713eec/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/a0f95c03d9689b4c33c3444bfd713eec/transformed/ui-tooling-preview-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/68401cb29ac156b90fbe8a9d7d2eba86/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/68401cb29ac156b90fbe8a9d7d2eba86/transformed/ui-graphics-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/a4c4bbd3fcd6f28898130046e66ed0f5/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/a4c4bbd3fcd6f28898130046e66ed0f5/transformed/savedstate-ktx-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/cd7979fc10e46d0d9524de731740858d/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] /home/lintang/.gradle/caches/8.11.1/transforms/cd7979fc10e46d0d9524de731740858d/transformed/savedstate-1.2.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/6404c627eb75844550644e0dc2be7375/transformed/loader-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.loader:loader:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/6404c627eb75844550644e0dc2be7375/transformed/loader-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/35137947b5503898818cd51c535f4afe/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/35137947b5503898818cd51c535f4afe/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/d198c48a8fcd666137fc98ad2153bd9d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/d198c48a8fcd666137fc98ad2153bd9d/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/bc48278add661962a5ac32764bdae066/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/bc48278add661962a5ac32764bdae066/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/57de3193223c1554f828e32ca33e7d08/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/57de3193223c1554f828e32ca33e7d08/transformed/lifecycle-viewmodel-ktx-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/1f0a3af6ba6f8feb483f142fa390c9c2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/1f0a3af6ba6f8feb483f142fa390c9c2/transformed/lifecycle-viewmodel-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/503c0f92e34c197c53033ab3899a312d/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/503c0f92e34c197c53033ab3899a312d/transformed/lifecycle-runtime-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/02d38b6cebf67ef7e3c641a7ce9b564a/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/02d38b6cebf67ef7e3c641a7ce9b564a/transformed/lifecycle-runtime-ktx-2.7.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/08864c44e08860a03a6c1f8388182583/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/08864c44e08860a03a6c1f8388182583/transformed/lifecycle-viewmodel-compose-2.7.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/lintang/.gradle/caches/8.11.1/transforms/e34ba4eaca8f4f3f618f2b312bc4c575/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [com.google.accompanist:accompanist-drawablepainter:0.32.0] /home/lintang/.gradle/caches/8.11.1/transforms/e34ba4eaca8f4f3f618f2b312bc4c575/transformed/accompanist-drawablepainter-0.32.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/da4f4b65004b866da6704b174061634c/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/da4f4b65004b866da6704b174061634c/transformed/ui-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/cdee19919f270eab1960f7dbccc760a4/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/cdee19919f270eab1960f7dbccc760a4/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/2b4f07c3109cca1f80e930e5d1be15dc/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/2b4f07c3109cca1f80e930e5d1be15dc/transformed/activity-compose-1.8.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/efef33eb21746abd27229b57f4463656/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.2] /home/lintang/.gradle/caches/8.11.1/transforms/efef33eb21746abd27229b57f4463656/transformed/activity-1.8.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c930a96b1ed4b93a89de5ee6e04977df/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c930a96b1ed4b93a89de5ee6e04977df/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c1d8160dff93ef8854534bad64aad6de/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/c1d8160dff93ef8854534bad64aad6de/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/f9803170cab00a7c3bf7d47274009c0b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/f9803170cab00a7c3bf7d47274009c0b/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/80d671bd657b3a4c37a45d5bb8d23b9c/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/80d671bd657b3a4c37a45d5bb8d23b9c/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/52bafbc89e5d8c5d1511621ef1bff9ed/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/52bafbc89e5d8c5d1511621ef1bff9ed/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/03dcc26c64e0c2d2cfec2989aee7afce/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/03dcc26c64e0c2d2cfec2989aee7afce/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/2a93291b0c40f8c7d90a08a115d7c7ee/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/2a93291b0c40f8c7d90a08a115d7c7ee/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d9fd52b44e65063c48d7ddef540bf648/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/d9fd52b44e65063c48d7ddef540bf648/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-splashscreen:1.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/0dee70eeca4a198f5ee79623d7c8f36a/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-splashscreen:1.0.1] /home/lintang/.gradle/caches/8.11.1/transforms/0dee70eeca4a198f5ee79623d7c8f36a/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/7cd2a456e9b56c7959a23f6ff43630aa/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/7cd2a456e9b56c7959a23f6ff43630aa/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/e6ca57d292b9d3dd92be1d3d73d05d84/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/e6ca57d292b9d3dd92be1d3d73d05d84/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/25f6cd291c6f0fbfc424326494d0caa2/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/25f6cd291c6f0fbfc424326494d0caa2/transformed/runtime-saveable-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/054046d5463ad8562685e954674a6298/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/054046d5463ad8562685e954674a6298/transformed/runtime-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/ee091f0c7308ef45fcba5929e70c673f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] /home/lintang/.gradle/caches/8.11.1/transforms/ee091f0c7308ef45fcba5929e70c673f/transformed/annotation-experimental-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/7c91a5ab61ef46679d8dee62502e2d8a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/7c91a5ab61ef46679d8dee62502e2d8a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/003075803141af863c590d2c7e0a9d57/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/003075803141af863c590d2c7e0a9d57/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/19545ac238602b48da7363bf52d5d46f/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/19545ac238602b48da7363bf52d5d46f/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/9954c41315cd1d8028655680c2a17b63/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/9954c41315cd1d8028655680c2a17b63/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/b0b7cd7b30df8f0dd559848c72dbeac8/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/b0b7cd7b30df8f0dd559848c72dbeac8/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.4.2] /home/lintang/.gradle/caches/8.11.1/transforms/6c313a26aba16a82ba1519371d2385a4/transformed/viewbinding-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:7.4.2] /home/lintang/.gradle/caches/8.11.1/transforms/6c313a26aba16a82ba1519371d2385a4/transformed/viewbinding-7.4.2/AndroidManifest.xml:5:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/lintang/.gradle/caches/8.11.1/transforms/14c9003ff9fc5629291b30a496790eda/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.7] /home/lintang/.gradle/caches/8.11.1/transforms/14c9003ff9fc5629291b30a496790eda/transformed/exifinterface-1.3.7/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/7cffb9699eb5500700f3f7775daf2b5c/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
+MERGED from [com.google.dagger:dagger-lint-aar:2.51.1] /home/lintang/.gradle/caches/8.11.1/transforms/7cffb9699eb5500700f3f7775daf2b5c/transformed/dagger-lint-aar-2.51.1/AndroidManifest.xml:18:3-42
 	android:targetSdkVersion
 		INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /mnt/E47C0DE17C0DAF7C/laragon/LifeMarker/app/src/main/AndroidManifest.xml
-activity#androidx.activity.ComponentActivity
-ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:23:9-25:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/85ebef60e29d059a8b7c827269373edb/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:24:13-63
-activity#androidx.compose.ui.tooling.PreviewActivity
-ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
-	android:exported
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
-	android:name
-		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e43f20fe2a818d0b456e1354803642f0/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
-queries
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
-package#com.google.android.apps.maps
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
-uses-library#org.apache.http.legacy
-ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
-	android:name
-		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/cca56224ed185d741e28aabd5910bc66/transformed/play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:23:9-27:75
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:25:13-46
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:26:13-37
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:27:13-72
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:24:13-93
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:33:9-37:51
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:35:13-36
-	android:visibleToInstantApps
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:37:13-48
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:36:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/0549a076bc6006308fbdd7e11f1ac9c6/transformed/play-services-auth-21.0.0/AndroidManifest.xml:34:13-89
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.1.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/5dc90d8274db2fd1a8f452a63e52297d/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+ADDED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/8672c76b34772555b9aa82a57962f568/transformed/play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+		ADDED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:10:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.2.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/35f5bbcefeda3950a3c4214c0bd3ef4d/transformed/play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
-provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/6f311219cb86cefe0837437d3d8af09d/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
-	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
-	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+		ADDED from [com.google.maps.android:android-maps-utils:3.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/a707b6d74cc4db1b8e88c38dcbfd1008/transformed/android-maps-utils-3.7.0/AndroidManifest.xml:9:13-58
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+queries
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:30:5-34:15
+package#com.google.android.apps.maps
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:18.2.0] /home/lintang/.gradle/caches/8.11.1/transforms/b6197d6ea6685181346fb9e2ab9bba7e/transformed/play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
-meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/589ea0b27efd0ba50cc91ba58ae6aa51/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
-meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/e2060f05c5ac9ce1bf8a32238a332023/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#com.lifemarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-	android:protectionLevel
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
-	android:name
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#com.lifemarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
-	android:name
-		ADDED from [androidx.core:core:1.12.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/62a5454ced6ef2f01dc7b40cc98e25c7/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:33:9-37:51
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
-	tools:ignore
-		ADDED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime:2.6.1] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/b96b008a60ffa263cd1ae592385466b1/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
-meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
-	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
-	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
-receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
-	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
-	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:35:13-36
+	android:visibleToInstantApps
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:37:13-48
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:21.0.0] /home/lintang/.gradle/caches/8.11.1/transforms/816a9930595da88b47db0f1b349036ec/transformed/play-services-auth-21.0.0/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:18.1.0] /home/lintang/.gradle/caches/8.11.1/transforms/f485f70f5aad7ed70875fe6071fad799/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
+activity#androidx.activity.ComponentActivity
+ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-test-manifest:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/aa398b469bac18f80207153d038499d5/transformed/ui-test-manifest-1.6.5/AndroidManifest.xml:24:13-63
+activity#androidx.compose.ui.tooling.PreviewActivity
+ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
+	android:exported
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:25:13-36
+	android:name
+		ADDED from [androidx.compose.ui:ui-tooling-android:1.6.5] /home/lintang/.gradle/caches/8.11.1/transforms/6c604b7e8dba4bce7a0496f7d3d2cc95/transformed/ui-tooling-release/AndroidManifest.xml:24:13-71
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /home/lintang/.gradle/caches/8.11.1/transforms/1f6b9e056c78976933b7b5ab91dd7260/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.3.0] /home/lintang/.gradle/caches/8.11.1/transforms/0580aa41c2b178da73d282d924c0f1df/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.7.0] /home/lintang/.gradle/caches/8.11.1/transforms/170a6f1026265e8d97b89e9ec5c8ef88/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+permission#com.lifemarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+uses-permission#com.lifemarker.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.12.0] /home/lintang/.gradle/caches/8.11.1/transforms/b92956409ad0e3a3b3bbda30163061c1/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:28:13-60
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+		ADDED from [androidx.room:room-runtime:2.6.1] /home/lintang/.gradle/caches/8.11.1/transforms/8bdf40b31d848d3e3659447e086b46f8/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.0] /mnt/E47C0DE17C0DAF7C/gamabuddy_caches/gradle/caches/transforms-4/abbe567e3b2b7db2ab8e49666789593a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] /home/lintang/.gradle/caches/8.11.1/transforms/1a3962b095503487c0cc6fef02480df1/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92

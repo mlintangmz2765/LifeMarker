@@ -16,8 +16,11 @@ class GoogleDriveManager @Inject constructor(
     @ApplicationContext private val context: Context,
     private val driveServiceFactory: GoogleDriveService
 ) {
-    private val DB_NAME = "life_marker.db"
+    private val DB_NAME = "lifemarker.db"
     private val MIME_TYPE = "application/x-sqlite3"
+
+    data class BackupInfo(val fileId: String, val modifiedTime: Long)
+
 
     suspend fun backupDatabase(account: GoogleSignInAccount): Result<String> = withContext(Dispatchers.IO) {
         try {
@@ -28,7 +31,6 @@ class GoogleDriveManager @Inject constructor(
                 return@withContext Result.failure(Exception("Database file not found"))
             }
 
-            // Check if backup already exists
             val fileId = getExistingBackupFileId(service)
             
             val fileMetadata = com.google.api.services.drive.model.File().apply {
@@ -38,11 +40,9 @@ class GoogleDriveManager @Inject constructor(
             val mediaContent = FileContent(MIME_TYPE, dbFile)
 
             if (fileId != null) {
-                // Update existing
                 service.files().update(fileId, fileMetadata, mediaContent).execute()
                 Result.success("Backup updated successfully")
             } else {
-                // Create new
                 service.files().create(fileMetadata, mediaContent).execute()
                 Result.success("Backup created successfully")
             }
@@ -59,7 +59,6 @@ class GoogleDriveManager @Inject constructor(
 
             val dbFile = context.getDatabasePath(DB_NAME)
             
-            // It is safer to overwrite via stream
             FileOutputStream(dbFile).use { outputStream ->
                 service.files().get(fileId).executeMediaAndDownloadTo(outputStream)
             }
@@ -70,11 +69,28 @@ class GoogleDriveManager @Inject constructor(
         }
     }
 
+    suspend fun getBackupInfo(account: GoogleSignInAccount): BackupInfo? = withContext(Dispatchers.IO) {
+        try {
+            val service = driveServiceFactory.getDriveService(account)
+            val result = service.files().list()
+                .setQ("name='$DB_NAME' and trashed=false")
+                .setSpaces("drive")
+                .setFields("files(id, name, modifiedTime)")
+                .execute()
+            
+            val file = result.files?.firstOrNull() ?: return@withContext null
+            val time = file.modifiedTime?.value ?: 0L
+            BackupInfo(file.id, time)
+        } catch (e: Exception) {
+            null
+        }
+    }
+
     private fun getExistingBackupFileId(service: Drive): String? {
         val result = service.files().list()
             .setQ("name='$DB_NAME' and trashed=false")
             .setSpaces("drive")
-            .setFields("nextPageToken, files(id, name)")
+            .setFields("files(id, name)")
             .execute()
         return result.files?.firstOrNull()?.id
     }

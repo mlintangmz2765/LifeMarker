@@ -16,6 +16,8 @@ data class CategoryUiState(
     val categories: List<Category> = emptyList(),
     val isAddingCategory: Boolean = false,
     val editingCategoryId: Long? = null,
+    val isEditingSystemCategory: Boolean = false,
+    val editingSystemNameKey: String? = null,
     val newCategoryName: String = "",
     val newCategoryColor: Int = 0xFFFF9800.toInt(),
     val newCategoryIcon: String = "Place"
@@ -41,6 +43,8 @@ class CategoryViewModel @Inject constructor(
         _uiState.update { it.copy(
             isAddingCategory = true, 
             editingCategoryId = null,
+            isEditingSystemCategory = false,
+            editingSystemNameKey = null,
             newCategoryName = "",
             newCategoryColor = 0xFFFF9800.toInt(),
             newCategoryIcon = "Place"
@@ -51,7 +55,9 @@ class CategoryViewModel @Inject constructor(
         _uiState.update { it.copy(
             isAddingCategory = true,
             editingCategoryId = category.id,
-            newCategoryName = category.customName ?: category.systemNameKey ?: "",
+            isEditingSystemCategory = category.isSystemGenerated,
+            editingSystemNameKey = category.systemNameKey,
+            newCategoryName = category.customName ?: "",
             newCategoryColor = category.colorHex,
             newCategoryIcon = category.iconName
         ) }
@@ -86,9 +92,9 @@ class CategoryViewModel @Inject constructor(
         viewModelScope.launch {
             val category = Category(
                 id = state.editingCategoryId ?: 0,
-                isSystemGenerated = false,
-                systemNameKey = null, // Custom categories don't have this
-                customName = state.newCategoryName,
+                isSystemGenerated = state.isEditingSystemCategory,
+                systemNameKey = state.editingSystemNameKey,
+                customName = if (state.isEditingSystemCategory) null else state.newCategoryName,
                 colorHex = state.newCategoryColor,
                 iconName = state.newCategoryIcon
             )

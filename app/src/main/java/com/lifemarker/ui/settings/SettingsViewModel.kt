@@ -1,5 +1,7 @@
 package com.lifemarker.ui.settings
 
+import com.lifemarker.R
+
 import android.app.Activity
 import android.content.Context
 import androidx.activity.result.ActivityResultLauncher
@@ -18,7 +20,9 @@ import javax.inject.Inject
 
 data class SettingsUiState(
     val isSyncing: Boolean = false,
-    val syncStatusMessage: String? = null
+    val syncStatusMessageResId: Int? = null,
+    val lastBackupTime: Long? = null,
+    val needsRestart: Boolean = false
 )
 
 @HiltViewModel
@@ -30,15 +34,19 @@ class SettingsViewModel @Inject constructor(
     private val _uiState = MutableStateFlow(SettingsUiState())
     val uiState: StateFlow<SettingsUiState> = _uiState.asStateFlow()
 
+    init {
+    }
+
+
     fun getGoogleSignInIntent() = driveService.getSignInIntent()
 
     fun handleSignInResult(context: Context, backup: Boolean, intent: android.content.Intent?) {
         viewModelScope.launch {
-            _uiState.update { it.copy(isSyncing = true, syncStatusMessage = "Authenticating...") }
+            _uiState.update { it.copy(isSyncing = true, syncStatusMessageResId = R.string.authenticating) }
             
             driveService.getSignedInAccountFromIntent(intent).fold(
                 onSuccess = { account ->
-                    _uiState.update { it.copy(syncStatusMessage = if (backup) "Backing up data..." else "Restoring data...") }
+                    _uiState.update { it.copy(syncStatusMessageResId = if (backup) R.string.backing_up else R.string.restoring) }
                     
                     val result = if (backup) {
                         driveManager.backupDatabase(account)
@@ -47,22 +55,41 @@ class SettingsViewModel @Inject constructor(
                     }
 
                     result.fold(
-                        onSuccess = { msg ->
-                            _uiState.update { it.copy(isSyncing = false, syncStatusMessage = msg) }
+                        onSuccess = {
+                            _uiState.update { it.copy(
+                                isSyncing = false, 
+                                syncStatusMessageResId = R.string.sync_success,
+                                needsRestart = !backup
+                            ) }
+                            fetchBackupInfo(account)
                         },
                         onFailure = { err ->
-                            _uiState.update { it.copy(isSyncing = false, syncStatusMessage = err.message ?: "Sync failed") }
+                            _uiState.update { it.copy(isSyncing = false, syncStatusMessageResId = R.string.sync_failed) }
                         }
                     )
                 },
-                onFailure = { err ->
-                    _uiState.update { it.copy(isSyncing = false, syncStatusMessage = err.message ?: "Authentication failed") }
+                onFailure = { 
+                    _uiState.update { it.copy(isSyncing = false, syncStatusMessageResId = R.string.auth_failed) }
                 }
             )
         }
     }
 
+    fun fetchBackupInfo(context: Context) {
+        val account = GoogleSignIn.getLastSignedInAccount(context)
+        if (account != null) {
+            fetchBackupInfo(account)
+        }
+    }
+
+    private fun fetchBackupInfo(account: com.google.android.gms.auth.api.signin.GoogleSignInAccount) {
+        viewModelScope.launch {
+            val info = driveManager.getBackupInfo(account)
+            _uiState.update { it.copy(lastBackupTime = info?.modifiedTime) }
+        }
+    }
+
     fun clearSyncMessage() {
-        _uiState.update { it.copy(syncStatusMessage = null) }
+        _uiState.update { it.copy(syncStatusMessageResId = null) }
     }
 }

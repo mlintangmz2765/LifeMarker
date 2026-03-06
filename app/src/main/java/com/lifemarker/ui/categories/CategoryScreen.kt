@@ -27,6 +27,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.lifemarker.R
 import com.lifemarker.domain.model.Category
 import com.lifemarker.util.IconMapper
+import com.lifemarker.ui.components.CategoryIcon
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
 
@@ -124,10 +125,10 @@ fun CategoryItem(
                     .background(Color(category.colorHex)),
                 contentAlignment = Alignment.Center
             ) {
-                Icon(
-                    imageVector = IconMapper.getIconByName(category.iconName),
-                    contentDescription = null,
-                    tint = Color.White
+                CategoryIcon(
+                    iconName = category.iconName,
+                    tint = Color.White,
+                    modifier = Modifier.size(24.dp)
                 )
             }
             Spacer(modifier = Modifier.width(16.dp))
@@ -173,22 +174,23 @@ fun AddCategoryContent(
             label = { Text(stringResource(R.string.category_name)) },
             modifier = Modifier.fillMaxWidth(),
             shape = RoundedCornerShape(12.dp),
-            singleLine = true
+            singleLine = true,
+            enabled = !uiState.isEditingSystemCategory
         )
         Spacer(modifier = Modifier.height(16.dp))
 
-        Text("Select Color", style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.select_color), style = MaterialTheme.typography.titleMedium)
         Spacer(modifier = Modifier.height(8.dp))
         
         val colors = listOf(
-            0xFFF44336.toInt(), // Red
-            0xFFE91E63.toInt(), // Pink
-            0xFF9C27B0.toInt(), // Purple
-            0xFF3F51B5.toInt(), // Indigo
-            0xFF2196F3.toInt(), // Blue
-            0xFF4CAF50.toInt(), // Green
-            0xFFFF9800.toInt(), // Orange
-            0xFF795548.toInt()  // Brown
+            0xFFF44336.toInt(),
+            0xFFE91E63.toInt(),
+            0xFF9C27B0.toInt(),
+            0xFF3F51B5.toInt(),
+            0xFF2196F3.toInt(),
+            0xFF4CAF50.toInt(),
+            0xFFFF9800.toInt(),
+            0xFF795548.toInt()
         )
         
         LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -214,10 +216,13 @@ fun AddCategoryContent(
         }
 
         Spacer(modifier = Modifier.height(16.dp))
-        Text("Select Icon", style = MaterialTheme.typography.titleMedium)
+        Text(stringResource(R.string.select_icon), style = MaterialTheme.typography.titleMedium)
         Spacer(modifier = Modifier.height(8.dp))
         
-        LazyRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+        LazyRow(
+            horizontalArrangement = Arrangement.spacedBy(8.dp),
+            contentPadding = PaddingValues(bottom = 16.dp)
+        ) {
             items(IconMapper.predefinedIcons) { (name, vector) ->
                 val isSelected = uiState.newCategoryIcon == name
                 Box(
@@ -236,6 +241,14 @@ fun AddCategoryContent(
                 }
             }
         }
+
+        OutlinedTextField(
+            value = if (IconMapper.isEmoji(uiState.newCategoryIcon)) uiState.newCategoryIcon else "",
+            onValueChange = { if (it.length <= 2) onIconChange(it) },
+            label = { Text(stringResource(R.string.or_emoji)) },
+            modifier = Modifier.width(120.dp),
+            shape = RoundedCornerShape(12.dp)
+        )
 
         Spacer(modifier = Modifier.height(24.dp))
         Row(

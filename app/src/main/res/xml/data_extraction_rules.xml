@@ -4,11 +4,11 @@
 -->
 <data-extraction-rules>
     <cloud-backup>
-        <include domain="file" path="."/>
+        <exclude domain="database" path="lifemarker.db"/>
         <exclude domain="file" path="device_config"/>
     </cloud-backup>
     <device-transfer>
-        <include domain="file" path="."/>
+        <exclude domain="database" path="lifemarker.db"/>
         <exclude domain="file" path="device_config"/>
     </device-transfer>
 </data-extraction-rules>

@@ -16,11 +16,13 @@ import com.lifemarker.ui.theme.LifeMarkerTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.lifemarker.ui.settings.SettingsScreen
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         setContent {
             LifeMarkerTheme {

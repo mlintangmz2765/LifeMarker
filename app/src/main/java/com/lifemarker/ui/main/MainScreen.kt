@@ -12,6 +12,8 @@ import androidx.activity.result.PickVisualMediaRequest
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -46,7 +48,10 @@ import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.*
+import com.google.maps.android.compose.clustering.Clustering
 import com.lifemarker.R
+import com.lifemarker.domain.model.MarkerDetails
+import com.lifemarker.ui.components.CategoryIcon
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
@@ -89,7 +94,7 @@ fun MainScreen(
     }
 
     val cameraPositionState = rememberCameraPositionState {
-        position = CameraPosition.fromLatLngZoom(LatLng(-2.5489, 118.0149), 4f) // Default Indonesia
+        position = CameraPosition.fromLatLngZoom(LatLng(-2.5489, 118.0149), 4f)
     }
 
     val fusedLocationClient = remember { LocationServices.getFusedLocationProviderClient(context) }
@@ -107,7 +112,6 @@ fun MainScreen(
                     }
                 }
             } catch (e: SecurityException) {
-                // Ignore
             }
         }
     }
@@ -131,32 +135,31 @@ fun MainScreen(
             ) {
                 Clustering(
                     items = uiState.filteredMarkers.map { MarkerClusterItem(it) },
-                    onClusterItemClick = { clusterItem ->
+                    onClusterItemClick = { clusterItem: MarkerClusterItem ->
                         viewModel.startEditingMarker(clusterItem.markerDetails)
                         true
                     },
-                    clusterItemContent = { clusterItem ->
+                    clusterItemContent = { clusterItem: MarkerClusterItem ->
                         val marker = clusterItem.markerDetails
                         val categoryColor = marker.category?.colorHex ?: 0xFF6200EE.toInt()
                         val iconName = marker.category?.iconName ?: "Place"
                         
                         Box(
                             modifier = Modifier
-                                .size(48.dp)
+                                .size(40.dp)
                                 .clip(CircleShape)
                                 .background(Color(categoryColor)),
                             contentAlignment = Alignment.Center
                         ) {
-                            Icon(
-                                imageVector = com.lifemarker.util.IconMapper.getIconByName(iconName),
-                                contentDescription = null,
-                                tint = Color.White
+                            CategoryIcon(
+                                iconName = iconName,
+                                tint = Color.White,
+                                modifier = Modifier.size(24.dp)
                             )
                         }
                     }
                 )
             }
-            // Top Gradient Overlay + Search & Filter
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -164,13 +167,16 @@ fun MainScreen(
                     .align(Alignment.TopCenter)
                     .background(
                         Brush.verticalGradient(
-                            colors = listOf(Color.Black.copy(alpha = 0.6f), Color.Transparent)
+                            colors = listOf(
+                                MaterialTheme.colorScheme.surface.copy(alpha = 0.8f),
+                                MaterialTheme.colorScheme.surface.copy(alpha = 0.4f),
+                                Color.Transparent
+                            )
                         )
                     )
                     .padding(top = 40.dp, start = 16.dp, end = 16.dp, bottom = 12.dp)
             ) {
                 Column {
-                    // Search Bar
                     Surface(
                         shape = RoundedCornerShape(28.dp),
                         color = MaterialTheme.colorScheme.surface.copy(alpha = 0.9f),
@@ -190,7 +196,7 @@ fun MainScreen(
                                  textStyle = MaterialTheme.typography.bodyLarge.copy(color = MaterialTheme.colorScheme.onSurface),
                                  decorationBox = { innerTextField ->
                                      if (uiState.searchQuery.isEmpty()) {
-                                         Text("Cari catatan atau kategori...", color = MaterialTheme.colorScheme.onSurfaceVariant)
+                                         Text(stringResource(R.string.search_placeholder), color = MaterialTheme.colorScheme.onSurfaceVariant)
                                      }
                                      innerTextField()
                                  }
@@ -209,7 +215,6 @@ fun MainScreen(
                     
                     Spacer(modifier = Modifier.height(12.dp))
                     
-                    // Filter Chips
                     LazyRow(
                         horizontalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
@@ -217,9 +222,13 @@ fun MainScreen(
                             FilterChip(
                                 selected = uiState.selectedFilterCategoryId == null,
                                 onClick = { viewModel.clearCategoryFilter() },
-                                label = { Text("Semua") },
+                                label = { Text(stringResource(R.string.filter_all)) },
                                 leadingIcon = { Icon(Icons.Default.FilterList, "All", modifier = Modifier.size(18.dp)) },
-                                shape = RoundedCornerShape(12.dp)
+                                shape = RoundedCornerShape(12.dp),
+                                colors = FilterChipDefaults.filterChipColors(
+                                    containerColor = MaterialTheme.colorScheme.surface,
+                                    selectedContainerColor = MaterialTheme.colorScheme.primaryContainer
+                                )
                             )
                         }
                         items(uiState.categories) { category ->
@@ -232,13 +241,17 @@ fun MainScreen(
                                      Text(name) 
                                 },
                                 leadingIcon = {
-                                     Icon(
-                                         imageVector = com.lifemarker.util.IconMapper.getIconByName(category.iconName),
-                                         contentDescription = null,
-                                         modifier = Modifier.size(18.dp)
+                                     CategoryIcon(
+                                         iconName = category.iconName,
+                                         modifier = Modifier.size(18.dp),
+                                         tint = if (isSelected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.primary
                                      )
                                 },
-                                shape = RoundedCornerShape(12.dp)
+                                shape = RoundedCornerShape(12.dp),
+                                colors = FilterChipDefaults.filterChipColors(
+                                    containerColor = MaterialTheme.colorScheme.surface,
+                                    selectedContainerColor = MaterialTheme.colorScheme.primaryContainer
+                                )
                             )
                         }
                     }
@@ -264,7 +277,7 @@ fun MainScreen(
                 ExtendedFloatingActionButton(
                     onClick = { viewModel.startAddingMarker(currentLocation) },
                     icon = { Icon(Icons.Default.AddLocation, contentDescription = "Add Marker") },
-                    text = { Text("Catat Aktivitas", fontWeight = FontWeight.Bold) },
+                    text = { Text(stringResource(R.string.record_activity), fontWeight = FontWeight.Bold) },
                     containerColor = MaterialTheme.colorScheme.primary,
                     contentColor = MaterialTheme.colorScheme.onPrimary
                 )
@@ -314,9 +327,6 @@ fun AddMarkerContent(
         contract = ActivityResultContracts.PickVisualMedia(),
         onResult = { uri ->
             if (uri != null) {
-                // Important to take persistable URI permission if needed, but for simple gallery selection
-                // the content provider typically grants partial temporary access. For long term sync
-                // we'd copy it locally. For now, we store the content URI.
                 context.contentResolver.takePersistableUriPermission(uri, Intent.FLAG_GRANT_READ_URI_PERMISSION)
                 onPhotoChange(uri.toString())
             }
@@ -372,20 +382,21 @@ fun AddMarkerContent(
                 )
                 
                 Surface(
-                    shape = RoundedCornerShape(16.dp),
+                    shape = RoundedCornerShape(24.dp),
                     color = bgColor,
                     shadowElevation = scale,
                     modifier = Modifier.clickable { onCategorySelect(category.id) }
                 ) {
-                    val catName = category.systemNameKey?.let { stringResource(getIdentifier(context, it)) } 
-                            ?: category.customName 
-                            ?: "Unknown"
-                    Text(
-                        text = catName, 
-                        color = textColor,
-                        modifier = Modifier.padding(horizontal = 20.dp, vertical = 12.dp),
-                        fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal
-                    )
+                    Box(
+                        modifier = Modifier.padding(16.dp),
+                        contentAlignment = Alignment.Center
+                    ) {
+                        CategoryIcon(
+                            iconName = category.iconName,
+                            tint = textColor,
+                            modifier = Modifier.size(24.dp)
+                        )
+                    }
                 }
             }
         }
@@ -402,7 +413,6 @@ fun AddMarkerContent(
 
         Spacer(modifier = Modifier.height(24.dp))
         
-        // Photo Attachment Section
         if (uiState.newMarkerPhotoUri != null) {
             AsyncImage(
                 model = uiState.newMarkerPhotoUri,
@@ -421,7 +431,7 @@ fun AddMarkerContent(
             ) {
                  Icon(Icons.Default.Delete, contentDescription = "Remove")
                  Spacer(modifier = Modifier.width(8.dp))
-                 Text("Hapus Lampiran")
+                 Text(stringResource(R.string.remove_attachment))
             }
         } else {
             OutlinedButton(
@@ -431,7 +441,7 @@ fun AddMarkerContent(
             ) {
                  Icon(Icons.Default.Image, contentDescription = "Add Photo")
                  Spacer(modifier = Modifier.width(8.dp))
-                 Text("Lampirkan Foto")
+                 Text(stringResource(R.string.attach_photo))
             }
         }
         
@@ -445,11 +455,9 @@ fun AddMarkerContent(
                         val gmmIntentUri = Uri.parse("google.navigation:q=${positionContext.latitude},${positionContext.longitude}")
                         val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
                         mapIntent.setPackage("com.google.android.apps.maps")
-                        // Attempt to start maps; if not installed, gracefully do nothing or let system handle
                         if (mapIntent.resolveActivity(context.packageManager) != null) {
                             context.startActivity(mapIntent)
                         } else {
-                            // Fallback to generic geo URI
                             val genericUri = Uri.parse("geo:${positionContext.latitude},${positionContext.longitude}")
                             val genericIntent = Intent(Intent.ACTION_VIEW, genericUri)
                             context.startActivity(genericIntent)
@@ -460,7 +468,7 @@ fun AddMarkerContent(
                 ) {
                     Icon(Icons.Default.Directions, contentDescription = "Navigate")
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("Arahkan ke Sini")
+                    Text(stringResource(R.string.navigate_here))
                 }
             }
         }
@@ -485,10 +493,10 @@ fun AddMarkerContent(
                 Text(stringResource(R.string.save))
             }
         }
-        Spacer(modifier = Modifier.height(16.dp)) // Safe area inside bottom sheet
     }
 }
 
 private fun getIdentifier(context: Context, name: String): Int {
     return context.resources.getIdentifier(name, "string", context.packageName)
 }
+

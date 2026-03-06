@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LifeMarker</string>
+    <string name="add_marker">添加标记</string>
+    <string name="select_category">选择类别</string>
+    <string name="note_optional">备注（可选）</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="manage_categories">管理类别</string>
+    <string name="add_category">添加新类别</string>
+    <string name="category_name">类别名称</string>
+    
+    <string name="cat_eat">进食</string>
+    <string name="cat_toilet">洗手间 / 厕所</string>
+    <string name="cat_pray">祈祷</string>
+
+    <string name="settings">设置</string>
+    <string name="language">应用语言</string>
+    <string name="select_language">更改界面语言</string>
+
+    <string name="search_placeholder">搜索备注或类别...</string>
+    <string name="filter_all">全部</string>
+    <string name="record_activity">记录活动</string>
+    <string name="remove_attachment">删除附件</string>
+    <string name="attach_photo">添加照片</string>
+    <string name="navigate_here">导航至此</string>
+    <string name="google_drive_sync">Google 云端硬盘同步</string>
+    <string name="last_sync">上次同步：%1$s</string>
+    <string name="no_backup">Google 云端硬盘上没有备份</string>
+    <string name="backup">备份</string>
+    <string name="restore">恢复</string>
+    <string name="authenticating">正在进行身份验证...</string>
+    <string name="backing_up">正在备份数据...</string>
+    <string name="restoring">正在恢复数据...</string>
+    <string name="sync_failed">同步失败</string>
+    <string name="auth_failed">身份验证失败</string>
+    <string name="select_color">选择颜色</string>
+    <string name="select_icon">选择图标</string>
+    <string name="or_emoji">或输入表情符号</string>
+    <string name="sync_success">同步成功</string>
+    <string name="restart_required">数据库已恢复。请重新启动应用以刷新数据。</string>
+    <string name="copyright">© mlintangmz</string>
+    <string name="github_repo">GitHub 仓库</string>
+</resources>

@@ -8,5 +8,5 @@ data class MarkerDetails(
     val timestamp: Long,
     val note: String?,
     val photoUri: String? = null,
-    val category: Category? = null // Joined later in UseCase or Repository
+    val category: Category? = null
 )

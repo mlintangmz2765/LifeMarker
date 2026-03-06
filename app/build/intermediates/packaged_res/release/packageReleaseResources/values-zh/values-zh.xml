@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">添加新类别</string>
+    <string name="add_marker">添加标记</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="cancel">取消</string>
+    <string name="cat_eat">进食</string>
+    <string name="cat_pray">祈祷</string>
+    <string name="cat_toilet">洗手间 / 厕所</string>
+    <string name="category_name">类别名称</string>
+    <string name="language">应用语言</string>
+    <string name="manage_categories">管理类别</string>
+    <string name="note_optional">备注（可选）</string>
+    <string name="save">保存</string>
+    <string name="select_category">选择类别</string>
+    <string name="select_language">更改界面语言</string>
+    <string name="settings">设置</string>
+</resources>

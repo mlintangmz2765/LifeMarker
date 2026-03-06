@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">Добавить новую категорию</string>
+    <string name="add_marker">Добавить маркер</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="cancel">Отмена</string>
+    <string name="cat_eat">Прием пищи</string>
+    <string name="cat_pray">Молитва</string>
+    <string name="cat_toilet">Туалет / Уборная</string>
+    <string name="category_name">Название категории</string>
+    <string name="language">Язык приложения</string>
+    <string name="manage_categories">Управление категориями</string>
+    <string name="note_optional">Заметка (необязательно)</string>
+    <string name="save">Сохранить</string>
+    <string name="select_category">Выбрать категорию</string>
+    <string name="select_language">Изменить язык интерфейса</string>
+    <string name="settings">Настройки</string>
+</resources>

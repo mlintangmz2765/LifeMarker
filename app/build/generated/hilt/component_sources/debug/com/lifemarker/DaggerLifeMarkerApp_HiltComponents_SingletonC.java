@@ -409,18 +409,18 @@ public final class DaggerLifeMarkerApp_HiltComponents_SingletonC {
     private static final class LazyClassKeyProvider {
       static String com_lifemarker_ui_main_MainViewModel = "com.lifemarker.ui.main.MainViewModel";
 
-      static String com_lifemarker_ui_categories_CategoryViewModel = "com.lifemarker.ui.categories.CategoryViewModel";
-
       static String com_lifemarker_ui_settings_SettingsViewModel = "com.lifemarker.ui.settings.SettingsViewModel";
+
+      static String com_lifemarker_ui_categories_CategoryViewModel = "com.lifemarker.ui.categories.CategoryViewModel";
 
       @KeepFieldType
       MainViewModel com_lifemarker_ui_main_MainViewModel2;
 
       @KeepFieldType
-      CategoryViewModel com_lifemarker_ui_categories_CategoryViewModel2;
+      SettingsViewModel com_lifemarker_ui_settings_SettingsViewModel2;
 
       @KeepFieldType
-      SettingsViewModel com_lifemarker_ui_settings_SettingsViewModel2;
+      CategoryViewModel com_lifemarker_ui_categories_CategoryViewModel2;
     }
   }
 
@@ -469,18 +469,18 @@ public final class DaggerLifeMarkerApp_HiltComponents_SingletonC {
     private static final class LazyClassKeyProvider {
       static String com_lifemarker_ui_main_MainViewModel = "com.lifemarker.ui.main.MainViewModel";
 
-      static String com_lifemarker_ui_settings_SettingsViewModel = "com.lifemarker.ui.settings.SettingsViewModel";
-
       static String com_lifemarker_ui_categories_CategoryViewModel = "com.lifemarker.ui.categories.CategoryViewModel";
+
+      static String com_lifemarker_ui_settings_SettingsViewModel = "com.lifemarker.ui.settings.SettingsViewModel";
 
       @KeepFieldType
       MainViewModel com_lifemarker_ui_main_MainViewModel2;
 
       @KeepFieldType
-      SettingsViewModel com_lifemarker_ui_settings_SettingsViewModel2;
+      CategoryViewModel com_lifemarker_ui_categories_CategoryViewModel2;
 
       @KeepFieldType
-      CategoryViewModel com_lifemarker_ui_categories_CategoryViewModel2;
+      SettingsViewModel com_lifemarker_ui_settings_SettingsViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {

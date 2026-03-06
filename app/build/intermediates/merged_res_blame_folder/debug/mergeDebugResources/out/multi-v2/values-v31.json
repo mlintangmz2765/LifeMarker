@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.lifemarker.app-mergeDebugResources-67:/values-v31/values-v31.xml",
+            "map": [
+                {
+                    "source": "/home/lintang/.gradle/caches/8.11.1/transforms/0dee70eeca4a198f5ee79623d7c8f36a/transformed/core-splashscreen-1.0.1/res/values-v31/values-v31.xml",
+                    "from": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,473",
+                        "endLines": "8,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "468,697"
+                    }
+                }
+            ]
+        }
+    ]
+}

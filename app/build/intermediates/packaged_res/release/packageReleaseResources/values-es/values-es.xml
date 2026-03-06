@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_category">Añadir nueva categoría</string>
+    <string name="add_marker">Añadir Marcador</string>
+    <string name="app_name">LifeMarker</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cat_eat">Comer</string>
+    <string name="cat_pray">Rezar</string>
+    <string name="cat_toilet">Baños</string>
+    <string name="category_name">Nombre de la categoría</string>
+    <string name="language">Idioma de la aplicación</string>
+    <string name="manage_categories">Gestionar categorías</string>
+    <string name="note_optional">Nota (Opcional)</string>
+    <string name="save">Guardar</string>
+    <string name="select_category">Seleccionar categoría</string>
+    <string name="select_language">Cambiar idioma de la interfaz</string>
+    <string name="settings">Ajustes</string>
+</resources>

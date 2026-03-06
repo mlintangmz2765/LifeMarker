@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">LifeMarker</string>
+    <string name="add_marker">إضافة علامة</string>
+    <string name="select_category">اختر الفئة</string>
+    <string name="note_optional">ملاحظة (اختياري)</string>
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="manage_categories">إدارة الفئات</string>
+    <string name="add_category">إضافة فئة جديدة</string>
+    <string name="category_name">اسم الفئة</string>
+    
+    <string name="cat_eat">تناول الطعام</string>
+    <string name="cat_toilet">دورة مياه / حمام</string>
+    <string name="cat_pray">صلاة</string>
+
+    <string name="settings">الإعدادات</string>
+    <string name="language">لغة التطبيق</string>
+    <string name="select_language">تغيير لغة الواجهة</string>
+
+    <string name="search_placeholder">البحث عن الملاحظات أو الفئات...</string>
+    <string name="filter_all">الكل</string>
+    <string name="record_activity">تنسيق النشاط</string>
+    <string name="remove_attachment">إزالة المرفق</string>
+    <string name="attach_photo">إرفاق صورة</string>
+    <string name="navigate_here">التنقل إلى هنا</string>
+    <string name="google_drive_sync">مزامنة جوجل درايف</string>
+    <string name="last_sync">آخر مزامنة: %1$s</string>
+    <string name="no_backup">لا توجد نسخة احتياطية على جوجل درايف</string>
+    <string name="backup">نسخ احتياطي</string>
+    <string name="restore">استعادة</string>
+    <string name="authenticating">جاري المصادقة...</string>
+    <string name="backing_up">جاري النسخ الاحتياطي للبيانات...</string>
+    <string name="restoring">جاري استعادة البيانات...</string>
+    <string name="sync_failed">فشلت المزامنة</string>
+    <string name="auth_failed">فشلت المصادقة</string>
+    <string name="select_color">اختر اللون</string>
+    <string name="select_icon">اختر أيقونة</string>
+    <string name="or_emoji">أو أدخل ملصق (Emoji)</string>
+    <string name="sync_success">نجحت المزامنة</string>
+    <string name="restart_required">تمت استعادة قاعدة البيانات. يرجى إعادة تشغيل التطبيق لتحديث البيانات.</string>
+    <string name="copyright">© mlintangmz</string>
+    <string name="github_repo">مستودع GitHub</string>
+</resources>

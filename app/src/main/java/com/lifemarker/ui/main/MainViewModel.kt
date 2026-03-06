@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -48,7 +49,7 @@ class MainViewModel @Inject constructor(
                 markerRepository.getAllMarkers(),
                 _uiState.map { it.searchQuery },
                 _uiState.map { it.selectedFilterCategoryId }
-            ) { markers, query, filterId ->
+            ) { markers: List<MarkerDetails>, query: String, filterId: Long? ->
                 markers.filter { marker ->
                     val matchesQuery = query.isEmpty() || marker.note?.contains(query, ignoreCase = true) == true ||
                             marker.category?.customName?.contains(query, ignoreCase = true) == true
@@ -158,7 +159,7 @@ class MainViewModel @Inject constructor(
                 categoryId = catId,
                 latitude = lat,
                 longitude = lng,
-                timestamp = System.currentTimeMillis(),
+                timestamp = state.editingMarkerTimestamp ?: System.currentTimeMillis(),
                 note = state.newMarkerNote.takeIf { it.isNotBlank() },
                 photoUri = state.newMarkerPhotoUri,
                 category = null

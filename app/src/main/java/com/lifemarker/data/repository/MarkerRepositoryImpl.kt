@@ -4,6 +4,7 @@ import com.lifemarker.data.local.dao.CategoryDao
 import com.lifemarker.data.local.dao.MarkerDao
 import com.lifemarker.data.local.entity.CategoryEntity
 import com.lifemarker.data.local.entity.MarkerEntity
+import com.lifemarker.data.local.entity.MarkerWithCategory
 import com.lifemarker.domain.model.Category
 import com.lifemarker.domain.model.MarkerDetails
 import com.lifemarker.domain.repository.MarkerRepository
@@ -17,20 +18,14 @@ class MarkerRepositoryImpl @Inject constructor(
 ) : MarkerRepository {
 
     override fun getAllMarkers(): Flow<List<MarkerDetails>> {
-        return markerDao.getAllMarkers().map { entities ->
-            entities.map { entity ->
-                val categoryEntity = categoryDao.getCategoryById(entity.categoryId)
-                entity.toDomain(categoryEntity?.toDomain())
-            }
+        return markerDao.getAllMarkers().map { list ->
+            list.map { it.toDomain() }
         }
     }
 
     override fun getMarkersByCategory(categoryId: Long): Flow<List<MarkerDetails>> {
-        return markerDao.getMarkersByCategory(categoryId).map { entities ->
-            val categoryEntity = categoryDao.getCategoryById(categoryId)
-            entities.map { entity ->
-                entity.toDomain(categoryEntity?.toDomain())
-            }
+        return markerDao.getMarkersByCategory(categoryId).map { list ->
+            list.map { it.toDomain() }
         }
     }
 
@@ -51,6 +46,8 @@ class MarkerRepositoryImpl @Inject constructor(
     override suspend fun deleteMarker(marker: MarkerDetails) {
         markerDao.deleteMarker(marker.toEntity())
     }
+
+    private fun MarkerWithCategory.toDomain() = marker.toDomain(category?.toDomain())
 
     private fun MarkerEntity.toDomain(category: Category?) = MarkerDetails(
         id = id,

@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+color splash_background
+drawable app_icon
+drawable ic_splash_logo
+mipmap ic_launcher
+mipmap ic_launcher_round
+string add_category
+string add_marker
+string app_name
+string cancel
+string cat_eat
+string cat_pray
+string cat_toilet
+string category_name
+string language
+string manage_categories
+string note_optional
+string save
+string select_category
+string select_language
+string settings
+style Theme.LifeMarker
+style Theme.LifeMarker.Starting
+xml backup_rules
+xml data_extraction_rules
+xml locales_config

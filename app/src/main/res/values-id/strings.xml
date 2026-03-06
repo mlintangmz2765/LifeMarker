@@ -9,8 +9,35 @@
     <string name="add_category">Tambah Kategori Baru</string>
     <string name="category_name">Nama Kategori</string>
     
-    <!-- Default Categories -->
     <string name="cat_eat">Makan</string>
     <string name="cat_toilet">Kencing / Berak / Toilet</string>
     <string name="cat_pray">Sholat</string>
+
+    <string name="settings">Pengaturan</string>
+    <string name="language">Bahasa Aplikasi</string>
+    <string name="select_language">Ubah bahasa antarmuka</string>
+
+    <string name="search_placeholder">Cari catatan atau kategori...</string>
+    <string name="filter_all">Semua</string>
+    <string name="record_activity">Catat Aktivitas</string>
+    <string name="remove_attachment">Hapus Lampiran</string>
+    <string name="attach_photo">Lampirkan Foto</string>
+    <string name="navigate_here">Arahkan ke Sini</string>
+    <string name="google_drive_sync">Sinkronisasi Google Drive</string>
+    <string name="last_sync">Terakhir sinkron: %1$s</string>
+    <string name="no_backup">Belum ada backup di Google Drive</string>
+    <string name="backup">Cadangkan</string>
+    <string name="restore">Pulihkan</string>
+    <string name="authenticating">Mengautentikasi...</string>
+    <string name="backing_up">Mencadangkan data...</string>
+    <string name="restoring">Memulihkan data...</string>
+    <string name="sync_failed">Sinkronisasi gagal</string>
+    <string name="auth_failed">Autentikasi gagal</string>
+    <string name="select_color">Pilih Warna</string>
+    <string name="select_icon">Pilih Ikon</string>
+    <string name="or_emoji">Atau masukkan Emoji</string>
+    <string name="sync_success">Sinkronisasi berhasil</string>
+    <string name="restart_required">Database berhasil dipulihkan. Sila buka ulang aplikasi untuk memperbarui data.</string>
+    <string name="copyright">© mlintangmz</string>
+    <string name="github_repo">Repositori GitHub</string>
 </resources>
